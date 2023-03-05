@@ -17,6 +17,7 @@
   ],
   "start_url": "https://creadorcraftcp.blogspot.com/",
   "display": "fullscreen",
+  "orientation": "landscape",
   "theme_color": "#00FFFF",
   "background_color": "#008000"
 }
