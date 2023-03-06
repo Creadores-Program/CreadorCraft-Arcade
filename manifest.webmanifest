@@ -15,9 +15,11 @@
       "type": "image/png"
     }
   ],
+  "categories": ["games"],
   "start_url": "https://creadorcraftcp.blogspot.com/",
   "display": "fullscreen",
   "orientation": "landscape",
   "theme_color": "#00FFFF",
+  "id": "com.creadorcraft.cp",
   "background_color": "#008000"
 }
