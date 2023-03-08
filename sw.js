@@ -10,7 +10,7 @@ var contentToCache = appShellFiles.concat(cacheName);
 // This code executes in its own worker or thread
 self.addEventListener("install", event => {
    console.log("Service worker installed");
-   e.waitUntil(
+   event.waitUntil(
     caches.open(cacheName).then((cache) => {
       console.log(
         "[Servicio Worker] Offline mode was stored"
