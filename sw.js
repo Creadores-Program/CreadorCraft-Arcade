@@ -6,7 +6,7 @@ var appShellFiles = [
   "https://github.com/Trollhunters501/CreadorCraft-Arcade/raw/main/music/Warning.ogg",
   "https://creadorcraftcp.blogspot.com/"
 ];
-var contentToCache = appShellFiles.concat(cacheName);
+var contentToCache = appShellFiles.concat();
 // This code executes in its own worker or thread
 self.addEventListener("install", event => {
    console.log("Service worker installed");
