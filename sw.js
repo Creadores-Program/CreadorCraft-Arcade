@@ -10,32 +10,7 @@ var contentToCache = appShellFiles.concat();
 // This code executes in its own worker or thread
 self.addEventListener("install", event => {
    console.log("Service worker installed");
-   event.waitUntil(
-    caches.open(cacheName).then((cache) => {
-      console.log(
-        "[Servicio Worker] Offline mode was stored"
-      );
-      return cache.addAll(contentToCache);
-});
+   });
 self.addEventListener("activate", event => {
    console.log("Service worker activated");
-});
-self.addEventListener("fetch", (e) => {
-  e.respondWith(
-    caches.match(e.request).then((r) => {
-      console.log("[Servicio Worker] Getting Resource: " + e.request.url);
-      return (
-        r ||
-        fetch(e.request).then((response) => {
-          return caches.open(cacheName).then((cache) => {
-            console.log(
-              "[Servicio Worker] Store the New Resource: " + e.request.url
-            );
-            cache.put(e.request, response.clone());
-            return response;
-          });
-        })
-      );
-    })
-  );
 });
