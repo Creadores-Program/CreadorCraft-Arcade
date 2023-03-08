@@ -39,3 +39,17 @@ self.addEventListener("fetch", (e) => {
     })
   );
 });
+
+const activateN = async ()=>{
+        const sw = await navigator.serviceWorker.getRegistration()
+        await Notification.requestPermission()
+        if(sw){
+            sw.sendNotification('mensaje recivido',{
+                body:'has recivido un mensaje'
+            })
+        }else{
+            new Notification('mensaje recivido',{
+                body:'has recivido un mensaje'
+            })
+        }
+    }
