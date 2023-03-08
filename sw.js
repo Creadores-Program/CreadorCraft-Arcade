@@ -19,4 +19,36 @@ self.addEventListener("install", event => {
 });
 self.addEventListener("activate", event => {
    console.log("Service worker activated");
+   
+   event.waitUntil(
+    caches.keys().then((keyList) => {
+      return Promise.all(
+        keyList.map((key) => {
+          if (key !== cacheName) {
+            return caches.delete(key);
+          }
+        })
+      );
+    })
+  );
+});
+});
+self.addEventListener("fetch", (e) => {
+  e.respondWith(
+    caches.match(e.request).then((r) => {
+      console.log("[Servicio Worker] Getting Resource: " + e.request.url);
+      return (
+        r ||
+        fetch(e.request).then((response) => {
+          return caches.open(cacheName).then((cache) => {
+            console.log(
+              "[Servicio Worker] Store the New Resource: " + e.request.url
+            );
+            cache.put(e.request, response.clone());
+            return response;
+          });
+        })
+      );
+    })
+  );
 });
