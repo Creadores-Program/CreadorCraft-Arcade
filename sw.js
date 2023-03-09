@@ -5,3 +5,4 @@ kkself.addEventListener("install", function(event) {
 self.addEventListener("activate", function(event) {
    console.log("Service worker activated");
 });
+
