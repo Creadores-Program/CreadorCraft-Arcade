@@ -1,7 +1,7 @@
-// This code executes in its own worker or thread
-self.addEventListener("install", event => {
+
+kkself.addEventListener("install", function(event) {
    console.log("Service worker installed");
-   });
-self.addEventListener("activate", event => {
+});
+self.addEventListener("activate", function(event) {
    console.log("Service worker activated");
 });
