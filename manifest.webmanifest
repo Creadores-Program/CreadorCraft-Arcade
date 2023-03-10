@@ -16,8 +16,14 @@
     }
   ],
   "start_url": "https://creadorcraftcp.blogspot.com/",
+  "scope": "https://creadorcraftcp.blogspot.com/",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
   "display": "fullscreen",
   "orientation": "landscape",
   "theme_color": "#00FFFF",
   "background_color": "#008000"
+  
 }
