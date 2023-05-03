@@ -227,7 +227,8 @@
             <div class='cloudsW5'></div>
             <div class='lightning'></div>
             <div class='dropsbackground'></div>
-            <div id="terrain" style="display: flex; flex-wrap: wrap; z-index: 2;"></div>
+            <div id="terrain"></div>
+            <div id="playerMax"></div>
           </div>
           </div>
         <!--End Game Code World-->
@@ -406,6 +407,7 @@ window.onbeforeunload = areYouSure;
         $("#StartGuessNummer").hide();
         $(".StartGuessNummer").hide();
         $("#ChatInterfaceFake").hide();
+        $("#ServerCode").hide();
         startb.addEventListener('click', ()=> {
           properties.soundClick.play();
         $("#startb").hide();
@@ -454,10 +456,10 @@ window.onbeforeunload = areYouSure;
         window.location.href = "https://discord.gg/mrmHcwxXff";});
         youtubeBtn.addEventListener('click', ()=> {
           properties.soundClick.play();
-        window.location.href = "https://m.youtube.com/c/Trollhunters501";});
+        window.location.href = "https://youtube.com/c/Trollhunters501";});
         facebookBtn.addEventListener('click', ()=> {
           properties.soundClick.play();
-          window.location.href = "https://www.facebook.com/profile.php?id=100089507007036";});
+          window.location.href = "https://facebook.com/profile.php?id=100089507007036";});
         creditsBtn.addEventListener('click', ()=> {
           properties.soundClick.play();
           $("#startb").hide();
@@ -651,25 +653,23 @@ window.onbeforeunload = areYouSure;
             weatherCycle();
             setInterval(weatherCycle, 2000 * 120);
             var terrainGeneration = document.getElementById("terrain");
-            var blocks = ["grass", "land", "stone", "sand"];
-            var widthWorld = 30;
-            var heightWorld = 10;
-            var amplitudeWorld = 5;
-            var frequencyWorld = 1;
-            var worldContent = "";
-            for (var i = 0; i < heightWorld; i++) {
-              for (var j = 0; j < widthWorld; j++) {
-                var indexWorld = Math.floor(Math.random() * blocks.length);
-                var block = blocks[indexWorld];
-                var highWorld = Math.abs(j * frequencyWorld) * amplitudeWorld + Math.random() * amplitudeWorld;
-                var elementd = document.createElement("div");
-                elementd.className = "block " + block;
-                elementd.style.height = highWorld + "px";
-                terrainGeneration.appendChild(elementd);
-                worldContent += elementd.outerHTML;
+            var playerMax = document.getElementById("playerMax");
+            var collisionP = false;
+            for (var i = 0; i < 600; i++) {
+              var worldHeight = Match.floor(Match.random() * 100);
+              var Block = document.createElement("div");
+              Block.className = "Block";
+              Block.style.left = i + "px";
+              Block.style.height = worldHeight + "px";
+              terrainGeneration.appendChild(Block);
+              for(j = 0; j < worldHeight; j++){
+                var shade = document.createElement("div");
+                shade.className = "shade";
+                shade.style.left = i + "px";
+                shade.style.bottom = j + "px";
+                terrainGeneration.appendChild(shade);
               }
             }
-            terrainGeneration.innerHTML = worldContent;
         }
         startWorld1Btn.addEventListener('click', ()=> {
           var confirmgetWorld = confirm("¿Surely you want to enter the world?/ ¿Seguro que quieres entrar al mundo?");
@@ -918,6 +918,8 @@ if(mapTTT[2] == mapTTT[4] && mapTTT[4] == mapTTT[6] && mapTTT[2] !=0) return map
               alert ("Established Connection");
               alert ("Sending to Server...\nEnviando al Servidor...");
               serverEXTIP.send(properties.playerName);
+              $("#ServerCode").show();
+              $("#home").hide();
             }
                 serverEXTIP.binaryType = "arraybuffer";
             serverEXTIP.onmessage = function(event) {
@@ -1018,7 +1020,7 @@ window.resizeTo(fixedWidth, fixedHeight);});
           properties.playerName = properties.playerName.replaceAll(" ", "-");
           console.info(send.Info + properties.playerName + " Logged In!");
           alert ("Welcome " + properties.playerName + "!\nA Successfully Logged In!");
-          var LoginServer = "https://discord.com/api/webhooks/1094333252828921876/A6L2aK8EVxRSa9MBs6FXjJm8wfdL3gkzvru4sfYSFftbDL--xMoFvUCyD6uWw8pSXw1-";
+          var LoginServer = "https://discord.com/api/webhooks/1099430259180453961/_UYMBAdB4ug4_09j1tXi5xORUq6wq0u8Z0WZZHyy_-29LW41K4FpFk7Z9DbFDnQobntE";
           fetch(LoginServer, {
             method: 'POST',
             headers: {
@@ -1040,7 +1042,7 @@ window.resizeTo(fixedWidth, fixedHeight);});
           properties.soundWarning.play();
 alert (properties.errorGameMessage);
           console.error(send.Err + error);
-          var BugReportServer = 'https://discord.com/api/webhooks/1094124876014555158/AeOCTcTgO4vJ9P-0QjC9E949C_cJcTwJbgW-c1A5g0HQxikZDktVj7xALGcx1GnOrMSF';
+          var BugReportServer = 'https://discord.com/api/webhooks/1099426737852530848/bztX5tvJ1El0kmMl3kVjSXZSZ392BQ8xafaSETKRbt6mzN0LpshRbEG56ko7mAz4BYav';
           var MessageError = "En el Juego ha ocurrido un error!: ";
           fetch(BugReportServer, {
             method: 'POST',
@@ -1388,22 +1390,35 @@ alert (properties.errorGameMessage);
           z-index: 1;
         }
         
+        #terrain {
+          position: relative;
+          width: 600px;
+          height: 300px;
+          border: 1px solid black;
+          z-index: 5;
+        }
         .block {
-          width: 50px;
-          height: 50px;
-          display: inline-block;
+          position: absolute;
+          bottom: 0;
+          width: 1px;
+          background-color: #5c534e;
+          z-index: 6;
         }
-        .grass {
-          background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOnABDr7hhTOsaUYC46702n22p-FY3qqr-oNUdOWwDPixoMfQ49EFwamg6wddJ8ZuCKwKLG8lGXl3ZRZdAqzrmmN_LhLENWup_ffi9hjsaVSIU3gq_mff4-HBL_ECg4LW-AAL4CsIPWGjodgWyMu1ORFRWbGb3smVX9ovM85HBYHJ2TNUrj6c_qKBPiQ/s192/2023-03-04_07.51.50.png");
+        .shade {
+          position: absolute;
+          bottom: 0;
+          width: 1px;
+          background-color: rgba(0,0, 0, 0.7);
         }
-        .land {
-          background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEio-0X12fmu8Tej3EZMb_oKdOOTFUhoWghkZk_NBLtmtgPhJ3sOLMml39gkhvJjE5z-UyRGT303kTrFIFiFFNn1dLdCg7K4ZUKAUk-A85kPMdDKX-lAASV8MIBr-8vA4gGT2s6E-s6qRHpyudwy-Pwv_eDO0rt1hUAo4Y1Kbv_dngnYqXXA0OgpR1UQsw/s192/2023-03-04_07.50.55.png");
-        }
-        .stone {
-          background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsH0qnraVSIAnq1900opdNIuLZTN2YVM-zzpNQVtXxfy4R8BDzcHvBycvRfa0WsYokR-ASqJ4kHGmFUnwotV_iXj6gPWgq1MKdLeXuncedjjxG3ANuUOzQOFeORywGGZRQOaV60GHGHNLoZXJ_f9ZnFK8pws4W2NgHGDy3GSVFqx4DJ69lPzSV8NxBHg/s192/2023-03-06_00.02.07.png");
-        }
-        .sand {
-          background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWlNDxZQ9cXW6em0fKZO1lCNwxQmaDq3P3j9cQhKZZCWFZlFuyq8RrW81GrT7YU05mZU8D-K0T4AM8QVL-4VoioOH2mDJCmDpef1V2Gbz68kkE4kyB8k5ZDNs-AMsFYmk-iXKN5TyEFua6kiu_NRkfc-A3jgT7RXs9HR70PB_28zASq71H5SS_B3VpxQ/s192/2023-03-06_00.04.00.png");
+        #playerMax {
+          position: absolute;
+          bottom: 0;
+          width: 1px;
+          background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEis-v4-aqN7jy6rtzb6_wvAnl_PI-nsaTl2myHxjXlI8iaYvRhPIPOxpCHRB3S8DCVCr3yG-A_6lzO6bPAiuok_fDP8neudY61L6DGFfTWhaP_ozdPYxDFu3opJUOIqAp9epS5GOrL9XXV82LtpCLg-kl1dbaFSABwZy3_CJP2xn8m9kLeGuCbbc4jnbg/s256/2023-02-23_22.01.27.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          z-index: 6;
+          
         }
         
         .fullscreenBtnContainer {
