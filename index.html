@@ -1109,6 +1109,8 @@ window.resizeTo(fixedWidth, fixedHeight);});
         var domainVerify = window.location.host;
         if(domainVerify != "creadorcraftcp.blogspot.com"){
           alert("NO ESTA PERMITIDO LA PIRATERIA!!\n\nPIRACY IS NOT ALLOWED!!");
+          console.error(send.Err + "PIRACY IS NOT ALLOWED!!");
+          console.error(send.Err + "Disable Game CreadorCraft...");
           $("#Game").hide();
           properties.soundMenu.pause();
         }
