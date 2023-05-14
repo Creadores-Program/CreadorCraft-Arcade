@@ -1,44 +1,38 @@
 {
   "name": "CreadorCraft",
   "short_name": "CreadorCraft",
-  "description": "Juego Que cuenta Con Varios Juegos Variados y Divertidos! Inspirados en Juegos Divertido y Clasicos!",
+  "description": "Juego Que cuenta Con Varios Juegos Variados y Divertidos! Inspirados en Juegos Divertidos y Clasicos! por ejemplo 3 en raya, Adivina el Número, CreadorCraft Classic, CreadorCraft History mode, etc.",
   "icons": [
     {
       "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmmhKnPrttHCPftNFdwbC0A38xvMNdrWx8nqkeCl6iglstRSk9pvQyyMXtJXw_bBzJYS1iCyRyC8__nmSY8p_sLA-EGf9NG0zbYR2AbphPfk2BE5FZ1AEr_Hfd4u2pxO987gjhTIVen7-D8PvhNIk6-LLOlY_-1PKGeONx2Q3bOge-lqUikJTeWxWdMA/s1080/creadorcraft-logo.1.png",
       "sizes": "32x32",
       "type": "image/png"
     },
-    // ...
     {
       "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmmhKnPrttHCPftNFdwbC0A38xvMNdrWx8nqkeCl6iglstRSk9pvQyyMXtJXw_bBzJYS1iCyRyC8__nmSY8p_sLA-EGf9NG0zbYR2AbphPfk2BE5FZ1AEr_Hfd4u2pxO987gjhTIVen7-D8PvhNIk6-LLOlY_-1PKGeONx2Q3bOge-lqUikJTeWxWdMA/s1080/creadorcraft-logo.1.png",
       "sizes": "48x48",
       "type": "image/png"
     },
-    // ...
     {
       "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmmhKnPrttHCPftNFdwbC0A38xvMNdrWx8nqkeCl6iglstRSk9pvQyyMXtJXw_bBzJYS1iCyRyC8__nmSY8p_sLA-EGf9NG0zbYR2AbphPfk2BE5FZ1AEr_Hfd4u2pxO987gjhTIVen7-D8PvhNIk6-LLOlY_-1PKGeONx2Q3bOge-lqUikJTeWxWdMA/s1080/creadorcraft-logo.1.png",
       "sizes": "72x72",
       "type": "image/png"
     },
-    // ...
     {
       "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmmhKnPrttHCPftNFdwbC0A38xvMNdrWx8nqkeCl6iglstRSk9pvQyyMXtJXw_bBzJYS1iCyRyC8__nmSY8p_sLA-EGf9NG0zbYR2AbphPfk2BE5FZ1AEr_Hfd4u2pxO987gjhTIVen7-D8PvhNIk6-LLOlY_-1PKGeONx2Q3bOge-lqUikJTeWxWdMA/s1080/creadorcraft-logo.1.png",
       "sizes": "96x96",
       "type": "image/png"
     },
-    // ...
     {
       "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmmhKnPrttHCPftNFdwbC0A38xvMNdrWx8nqkeCl6iglstRSk9pvQyyMXtJXw_bBzJYS1iCyRyC8__nmSY8p_sLA-EGf9NG0zbYR2AbphPfk2BE5FZ1AEr_Hfd4u2pxO987gjhTIVen7-D8PvhNIk6-LLOlY_-1PKGeONx2Q3bOge-lqUikJTeWxWdMA/s1080/creadorcraft-logo.1.png",
       "sizes": "144x144",
       "type": "image/png"
     },
-    // ...
     {
       "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmmhKnPrttHCPftNFdwbC0A38xvMNdrWx8nqkeCl6iglstRSk9pvQyyMXtJXw_bBzJYS1iCyRyC8__nmSY8p_sLA-EGf9NG0zbYR2AbphPfk2BE5FZ1AEr_Hfd4u2pxO987gjhTIVen7-D8PvhNIk6-LLOlY_-1PKGeONx2Q3bOge-lqUikJTeWxWdMA/s1080/creadorcraft-logo.1.png",
       "sizes": "192x192",
       "type": "image/png"
     },
-    // ...
     {
       "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmmhKnPrttHCPftNFdwbC0A38xvMNdrWx8nqkeCl6iglstRSk9pvQyyMXtJXw_bBzJYS1iCyRyC8__nmSY8p_sLA-EGf9NG0zbYR2AbphPfk2BE5FZ1AEr_Hfd4u2pxO987gjhTIVen7-D8PvhNIk6-LLOlY_-1PKGeONx2Q3bOge-lqUikJTeWxWdMA/s1080/creadorcraft-logo.1.png",
       "sizes": "1080x1080",
