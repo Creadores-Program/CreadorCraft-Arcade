@@ -80,6 +80,7 @@
       
       <!--Extra Game addons-->
     <script src='https://apis.google.com/js/client.js?onload=init'></script>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async='async' src='https://www.gstatic.com/external_hosted/clipboardjs/clipboard.min.js'></script>
         <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -143,7 +144,7 @@
         
         <!--Credits code!-->
         <center><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_PrqUmBnWSYbseNmygnkXRlkxLV7T3YD7Ib74EpB8-k1VBG-DFFRY1IhfO1b6KrXQgHzlooTS7bXg2hkj4O-KCH6ZPE7gxltDLe2dEYLELn6xFNy-ppU02J6MaqNR8vgZX1Q5lHpm-YzmW-kGZUZYN9fLZZW9H_LETGiMbwOXOF-kdDEk5LFrx282Pg/s1400/20230207_215109.jpg' id='cpCreditsImg' width='500' height='300'/>
-        <p id='cpCreditsTxt'><font size="9">Credits:</font><br/>Graphic design: Samurai97 and zNOoBy_<br/>Programmer and Owner: Trollhunters501<br/>They helped with the Code: Daxolomeo, RextDev, Devcheck, Bing Chat, Bard By Google and Aldo_Rodrigo349<br/>Scripts Used in the Game:<br/>API's Google By Google,<br/>Google Fonts API By Google,<br/>Clipboard.js By zenorocha,<br/>JQuery By Google,<br/>imagesloaded By desandro,<br/>Glide By Glide,<br/>masonry By David DeSandro,<br/>Loadash by Loadash.<br/>Global Chat: Discord Y Widget Bot.<br/>Game Music:<br/>Epic Boss Fight,<br/>Don't Rush Inst.,<br/>Rush 2,<br/>Combat Zone,<br/>Arcade Center,<br/>Maybe Not.,<br/>My Galaxy,<br/>Comic Comic Book,<br/>Neon Cityscape,<br/>Retro,<br/>Uncoventioal Inst.<br/>Some Designs created with:<br/>Canva<br/>8 Bit<br/>Sound Effects created by:<br/>Kinemaster<br/>Creadores Program ©2023<br/><br/><img src="https://buttons.blogger.com/bloggerbutton2.gif" alt="Powered by Blogger"/></p></center>
+        <p id='cpCreditsTxt'><font size="9">Credits:</font><br/>Graphic design: Samurai97 and zNOoBy_<br/>Programmer and Owner: Trollhunters501<br/>They helped with the Code: Daxolomeo, RextDev, Devcheck, Bing Chat, Bard By Google and Aldo_Rodrigo349<br/>Scripts Used in the Game:<br/>API's Google By Google,<br/>Google Fonts API By Google,<br/>Clipboard.js By zenorocha,<br/>JQuery By Google,<br/>imagesloaded By desandro,<br/>Glide By Glide,<br/>masonry By David DeSandro,<br/>Loadash by Loadash,<br/>AMP JS by AMP JS.<br/>Global Chat: Discord Y Widget Bot.<br/>Game Music:<br/>Epic Boss Fight,<br/>Don't Rush Inst.,<br/>Rush 2,<br/>Combat Zone,<br/>Arcade Center,<br/>Maybe Not.,<br/>My Galaxy,<br/>Comic Comic Book,<br/>Neon Cityscape,<br/>Retro,<br/>Uncoventioal Inst.<br/>Some Designs created with:<br/>Canva<br/>8 Bit<br/>Sound Effects created by:<br/>Kinemaster<br/>Creadores Program ©2023<br/><br/><img src="https://buttons.blogger.com/bloggerbutton2.gif" alt="Powered by Blogger"/></p></center>
         <!--End Credits Code.-->
         
         <!--Single Player interface code-->
@@ -163,8 +164,7 @@
   server="1105653858455269526"
   channel="1105653859126362184"
   width="100%"
-  height="90%"
-></widgetbot></div></center>
+  height="90%"></widgetbot></div></center>
         <!--End Multiplayer Interface code-->
         
         <!--Back Button Code!-->
@@ -294,6 +294,9 @@
       console.info(send.Info + 'Loading Game...');
         
         //preload Game!
+        function exceptionArrow(exp){
+          throw exp;
+        }
         $("#noHackingGameInterface").hide();
         $(window).load(function() {
     $(".loader").fadeOut("slow");
@@ -314,6 +317,11 @@
         if(!localStorage.getItem('visited')){
           localStorage.setItem('visited', true);
           alert("Bienvenido a CreadorCraft!\n\n Welcome to CreatorCraft!");
+        }
+        if (!String.prototype.replaceAll) {
+          String.prototype.replaceAll = function (search, replace) {
+            return this.split(search).join(replace);
+          };
         }
         //End of Preload Game.
         
@@ -509,7 +517,7 @@ window.onbeforeunload = areYouSure;
         $("#creditsBtn").show();});
         followGameBtn.addEventListener('click', ()=> {
           properties.soundClick.play();
-          window.location.href = "https://www.blogger.com/follow-blog.g?blogID=3423424965086947491";
+          window.open("https://www.blogger.com/follow-blog.g?blogID=3423424965086947491");
         });
         shareGameBtn.addEventListener("click", ()=> {
           properties.soundClick.play();
@@ -536,13 +544,13 @@ window.onbeforeunload = areYouSure;
           $("#contractSocialnetworks").hide();});
         discordBtn.addEventListener('click', ()=> {
           properties.soundClick.play();
-        window.location.href = "https://discord.gg/mrmHcwxXff";});
+        window.open("https://discord.gg/mrmHcwxXff");});
         youtubeBtn.addEventListener('click', ()=> {
           properties.soundClick.play();
-        window.location.href = "https://youtube.com/c/Trollhunters501";});
+        window.open("https://youtube.com/c/Trollhunters501");});
         facebookBtn.addEventListener('click', ()=> {
           properties.soundClick.play();
-          window.location.href = "https://facebook.com/profile.php?id=100089507007036";});
+          window.open("https://facebook.com/profile.php?id=100089507007036");});
         creditsBtn.addEventListener('click', ()=> {
           properties.soundClick.play();
           $("#startb").hide();
@@ -1196,7 +1204,11 @@ if(mapTTT[2] == mapTTT[4] && mapTTT[4] == mapTTT[6] && mapTTT[2] !=0) return map
             linkSavePAD.click();
           }
         });
-        var ListwordsHangman = ["hola", "adios", "correr", "caminar", "comer", "gente", "nube", "arbol", "castillo", "silla", "tele", "mesa", "telefono", "reloj", "tienda", "control", "zapatos", "ladrillo", "bomberos", "astro", "fluir", "computadora", "movil", "palabra", "mente", "cama", "casa", "lluvia", "bloque", "horno", "camara", "jugar", "murciélago", "estrella", "azucar", "canguro", "abogado", "abeja", "alambre", "alegria", "amigo", "animal", "anillo", "año", "aplauso", "apodo", "arcilla", "mochila", "cuchara", "50"];
+        var ListwordsHangman = ["hola", "adios", "correr", "caminar", "comer", "gente", "nube", "arbol", "castillo", "silla", "tele", "mesa", "telefono", "reloj", "tienda", "control", "zapatos", "ladrillo", "bomberos", "astro", "fluir", "computadora", "movil", "palabra", "mente", "cama", "casa", "lluvia", "bloque", "horno", "camara", "jugar", "murciélago", "estrella", "azucar", "canguro", "abogado", "abeja", "alambre", "alegria", "amigo", "animal", "anillo", "año", "aplauso", "apodo", "arcilla", "mochila", "cuchara", "bueno", "enseguida", "detalle", "persona", "traer", "niño", "reflector", "cambiar", "estudio", "parque", "exaltar", "camino", "trato", "traje", "traba", "reforzar", "bombear", "acera", "acantilado", "acuario", "adivinanza", "adverbio", "aeropuerto", "afeitarse", "aflojar", "aforismo", "africano", "agrandar", "aguacate", "agonizar", "ajo", "albaricoque", "albedrío", "albergue", "aliento", "alfiler", "alfombra", "algoritmo", "almeja", "alma", "almohada", "alpaca", "alpiste", "alternativa", "amuleto", "analisis", "anaranjado", "anatomia", "antorcha", "aprender", "asado", "the", "of", "and", "to", "in", "is", "that", "was", "he", "she", "it", "with", "as", "for", "on", "be", "at", "by", "from", "or", "not",
+  "you", "we", "they", "I", "this", "that", "these", "those", "who", "what", "when", "where", "why", "how", "a", "an", "some", "any", "all", "each", "every",
+  "few", "many", "most", "other", "such", "like", "about", "into", "up", "down", "out", "over", "under", "near", "far", "between", "through", "during", "before", "after",
+  "while", "until", "since", "as", "if", "then", "that", "when", "where", "why", "how", "what", "who", "which", "whose", "whom", "will", "would", "shall", "should",
+  "may", "might", "can", "could", "must", "need", "dare", "ought", "used", "would", "should", "may", "might", "can", "could", "must", "need", "dare", "ought", "used"];
         var wordguessHangman = [];
         var mostwordHangman = [];
         var playerwordshistoryHangman = [];
@@ -1530,7 +1542,9 @@ window.resizeTo(fixedWidth, fixedHeight);});
           }
         }
         if (properties.playerName != null && properties.playerName.length < 20 && properties.playerName.length > 4 && properties.playerName != "   " && properties.playerName != "     " && properties.playerName != "      "){
-          properties.playerName = properties.playerName.replaceAll(" ", "-");
+          if(properties.playerName.indexOf(" ") != -1){
+            properties.playerName = properties.playerName.replaceAll(" ", "-");
+          }
           if(!localStorage.getItem("playerName")){
             localStorage.setItem("playerName", properties.playerName);
           }else if(localStorage.getItem("playerName") != properties.playerName){
@@ -1608,6 +1622,7 @@ alert (properties.errorGameMessage);
            })
           });
 //End of Executable Code JS and Error Detection.
+          
 }
 </script>
       <!--End of JavaScript Code.-->
