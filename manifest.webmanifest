@@ -48,6 +48,6 @@
   "display": "fullscreen",
   "orientation": "landscape",
   "theme_color": "#00FFFF",
-  "background_color": "#008000"
-  
+  "background_color": "#008000",
+  "version": "1.2.0"
 }
