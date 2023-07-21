@@ -39,6 +39,22 @@
       "type": "image/png"
     }
   ],
+  "screenshots" : [
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0B3fHyY5HpEF4NrpQgNFWCNePsA9Bmu2HXS0xC0l6SptwfJekvARlwztbVJBkYBJI3s-OY_JDU4lFOh0xLuh8hG8ZCF8sXs-jApc2TTAuR8aTKICKXnyCNkFjjN9Qao0Xv_Ykb1YwrDNR0RP9EzPuGwQMbOI7xxDt6P4QPkZMDyDVnT7_DA-n-eYv41aM/s1600/Screenshot_20230720-220702.png",
+      "sizes": "1600x720",
+      "type": "image/png",
+      "label": "El Mejor inicio de un Juego!/The Best Start of a Game!",
+      "platform": "wide"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjdHU8riSfsClqMm-y9jKV2MtG4cMwdgSIrVY9LqPrx3VViUS7lfErRSU6zXvlr-whm4OGZmz07FXC_jF7Z67yJeSphJzdbOZ4N5anhMvcM9MTe6Mxu4saTFMMGeBCBCuSLud5PWZBO1p9jf-FZjdLBm57ubE_vVla-Iva8i4dY10zsiQhQPnW7zw3pz2g/s1600/Screenshot_20230720-220708.png",
+      "sizes": "1600x720",
+      "type": "image/png",
+      "label": "La configuración del Juego!/Game settings!",
+      "platform": "wide"
+    }
+  ],
   "start_url": "https://creadorcraftcp.blogspot.com/",
   "scope": "https://creadorcraftcp.blogspot.com/",
   "categories": [
