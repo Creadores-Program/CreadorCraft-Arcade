@@ -45,9 +45,17 @@
     "games",
     "entertainment"
   ],
+  "handle_links":"auto",
   "display": "fullscreen",
+  "display_override": ["fullscreen"],
   "orientation": "landscape",
   "theme_color": "#00FFFF",
   "background_color": "#008000",
+  "id": "creadorcraft",
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+     "preferred_width": 420
+  },
+  "handle_links":"auto",
   "version": "1.2.0"
 }
