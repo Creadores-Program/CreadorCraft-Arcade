@@ -53,6 +53,55 @@
       "type": "image/png",
       "label": "La configuración del Juego!/Game settings!",
       "platform": "wide"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXhVao_10cWyJygmnxHPsZpbzcQD2npmFLQfgEOZmgrExLthtzQ6JwOkcnBxbPUviV8m2RkPN7nqyBSZp9GcfaHPiVIN3tz6ZUPS0Cumakobm-io-wiMmXgWFjAbysLX9z3LmYWXzJ8R0iinHweLDCCAgHkjX3KuUMhaOfiAp14U-hDUS_-tdHLbVor-l7/s1600/Screenshot_20230720-220713.png",
+      "sizes": "1600x720",
+      "type": "image/png",
+      "label": "Modo Solitario o con Amigos en Servidores!/Solo Mode or with Friends on Servers!",
+      "platform": "wide"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWSJIiiOS8vDGVzRz5g_gFA9D9q4xARPCaL5gR9pu_gfwX2Xr8FLFDB9cf5pwzLOFF0zEA4Of20DgIPNznrPdjNdknbpG5WDusXZ4iOifhofAi6YIcSgCiNeb6YbjKIVQiY9LHYvWE-veTCIxg0f9DRE1JoeebXkqtqRW1lyL3PECgupBmKIfucEIrbeWX/s1600/Screenshot_20230720-220717.png",
+      "sizes": "1600x720",
+      "type": "image/png",
+      "label": "Puedes Jugar con amigos!/You can play with friends!",
+      "platform": "wide"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmS24Dc0LeEo6myda8TbdGM1jcUdmQqlkSCvBWFsHhJMuuG06eLvmUpLWmq2mL9LMy6vL_y0Hkfvl6okevq92TX1kqCqKQcUuTTS-1nZyuAHLe7ODuzYO9be97eSd7FxErv8gwcjMvuUejCD3p1Hg62YH76hl3021EnpAAGXj4XDYkNQbFZzCPYZKNU-QV/s1600/Screenshot_20230720-220723.png",
+      "sizes": "1600x720",
+      "type": "image/png",
+      "label": "Modo solitario con minijuegos!/Solitaire mode with minigames!",
+      "platform": "wide"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3lY4ljOgrYGOcerOag99jZE4dLnoVxb6-QHR8WlKHZV5NFT3o7Ws57-TC_4n4kcIo9AHvV3Mte2GdLojUIL7zGQrTmufUu8Ki0SnN6y5aMnPejw-qh2KxtvPMo7lZV3bzlqDFcjQkPDM9MIL7W7cv75GtJXDDtNyRmdJGcW-6oQ2vLZ0utN9uu94NkpQP/s1600/Screenshot_20230720-220732.png",
+      "sizes": "1600x720",
+      "type": "image/png",
+      "label": "Paint and Draw",
+      "platform": "wide"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZrNZpmztGpJyeC5CCgjEOmNkrFe5Po_krDeBdnbykkjYeCJzx-C6KD6jWWpT_5A9hvE_zHh4FMVMCSPTbjgyhbHIXvanEQ0OsFHNHU6T8MMGpkjNyMB2GBa2pLTom9iMhSYQ7e_Ddy0SlqrayPlOfm-0PvV4YJYTbX7Lli5R-WFgxHjpc7E_NZUKOkeT4/s1600/Screenshot_20230720-220736.png",
+      "sizes": "1600x720",
+      "type": "image/png",
+      "label": "Paint and Draw",
+      "platform": "wide"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhexM1AwdDf8bvyQDWWeGdtpKK3jeAYIXHaRH7cI1ZQc4kk61T06SxyCQx4u-yzXorOyvfeDpe3eMBC9hYXvoabk8wfUWycmoNHuwKX2BQ1yCutfL8dJo-uzXpEAEbD2qAzQNqlgn4J3eQVsNXdzqcOhR3jOXJJ7AFo8KLSucLtboB0J2HhKelpPxBUDMjU/s1600/Screenshot_20230720-220803.png",
+      "sizes": "1600x720",
+      "type": "image/png",
+      "label": "TikTakToe Color/3 En Raya Color",
+      "platform": "wide"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikdB30DmMSASqwVHBMwuJbD4jEMH99_MnE20TTziJSbwLZgZdHbFYYmId6Hkj2Chf_uCghfJiTWR68txxxz09D8wcvKzlrfg77jeX9glPOICpJUE3NHSgjb-NwDxH8DMeNz1ARiW0yTtn-Gvbu6Loafvmd9LuZdbIujtNlSgl7F8LdJEwkU64NY_J0VHc5/s1600/Screenshot_20230720-220825.png",
+      "sizes": "1600x720",
+      "type": "image/png",
+      "label": "El Ahorcado/Hangman",
+      "platform": "wide"
     }
   ],
   "start_url": "https://creadorcraftcp.blogspot.com/",
