@@ -119,7 +119,14 @@
       "platform": "wide"
     }
   ],
+  "capture_links": "existing_client_event",
   "url_handlers": [
+    { "origin": "https://creadorcraftcp.blogspot.com/" },
+    { "origin": "https://creadorcraft.blogspot.com/" },
+    { "origin": "https://www.blogger.com/follow.g?blogID=3423424965086947491" },
+    { "origin": "https://github.com/Trollhunters501/CreadorCraft-Arcade/wiki" }
+  ],
+  "scope_extensions": [
     { "origin": "https://creadorcraftcp.blogspot.com/" },
     { "origin": "https://creadorcraft.blogspot.com/" },
     { "origin": "https://www.blogger.com/follow.g?blogID=3423424965086947491" },
