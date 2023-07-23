@@ -3,6 +3,7 @@
   "short_name": "CreadorCraft",
   "description": "Juego Que cuenta Con Varios Juegos Variados y Divertidos! Inspirados en Juegos Divertidos y Clasicos! por ejemplo 3 en raya, Adivina el Número, CreadorCraft Classic, CreadorCraft History mode, etc.",
   "offline_enabled": true,
+  "android_package_name": "com.creadorcraft",
   "icons": [
     {
       "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmmhKnPrttHCPftNFdwbC0A38xvMNdrWx8nqkeCl6iglstRSk9pvQyyMXtJXw_bBzJYS1iCyRyC8__nmSY8p_sLA-EGf9NG0zbYR2AbphPfk2BE5FZ1AEr_Hfd4u2pxO987gjhTIVen7-D8PvhNIk6-LLOlY_-1PKGeONx2Q3bOge-lqUikJTeWxWdMA/s1080/creadorcraft-logo.1.png",
@@ -117,6 +118,12 @@
       "label": "El Ahorcado/Hangman",
       "platform": "wide"
     }
+  ],
+  "url_handlers": [
+    { "origin": "https://creadorcraftcp.blogspot.com/" },
+    { "origin": "https://creadorcraft.blogspot.com/" },
+    { "origin": "https://www.blogger.com/follow.g?blogID=3423424965086947491" },
+    { "origin": "https://github.com/Trollhunters501/CreadorCraft-Arcade/wiki" }
   ],
   "start_url": "https://creadorcraftcp.blogspot.com/",
   "scope": "https://creadorcraftcp.blogspot.com/",
