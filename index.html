@@ -20,6 +20,7 @@
     <meta name="revisit-after" content="5 days"/>
     <meta content='<$BlogPageTitle$>' property='og:title'/>
     <meta content='<$BlogPageTitle$>' property='og:sitename'/>
+    <meta name="google-site-verification" content="UXDgNrpQ7vKM5TSTVe0PUh76JwbxRAJiQqF-Ico7aVc" />
     <meta content='creadores, games, servidores, minecraft, craftsman, servers, foro, nukkit, servidor, server, trollhunters501, plugins, program, creadorcraft, arcade' name='keywords'/>
     <meta content='width=device-width, height=device-height,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no' name='viewport'/>
     <meta content='#00FFFF' name='theme-color'/>
@@ -806,6 +807,7 @@ function areYouSure() {
             Object.defineProperty(navigator, 'appVersion', { get: function(){ return navigator.userAgent; } });
           }
           if(!navigator.userAgentData){
+            Object.defineProperty(navigator, 'userAgentData', { get: function(){ return "indef"; } });
             Object.defineProperty(navigator.userAgentData, 'platform', { get: function(){ return "see All Info System/Ve la info de All Info System"; } });
             Object.defineProperty(navigator.userAgentData, "mobile", { get: function (){ if(navigator.userAgent.includes("Mobile")){ return true; }else{ return false; } } });
           }
