@@ -165,7 +165,7 @@
   ],
   "handle_links":"auto",
   "display": "fullscreen",
-  "display_override": ["fullscreen"],
+  "display_override": ["fullscreen", "standalone"],
   "orientation": "landscape",
   "theme_color": "#00FFFF",
   "background_color": "#008000",
