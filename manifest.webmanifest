@@ -167,16 +167,14 @@
   "display": "fullscreen",
   "display_override": ["fullscreen", "standalone"],
   "orientation": "landscape",
+  "launch_handler":{"client_mode":["focus-existing","auto"]},
   "theme_color": "#00FFFF",
   "background_color": "#008000",
   "id": "creadorcraft",
   "author": "Creadores Program",
   "prefer_related_applications": false,
-  "launch_handler": {
-    "client_mode": "auto"
-  },
   "edge_side_panel": {
-     "preferred_width": 420
+     "preferred_width": 445
   },
   "dir": "auto",
   "version": "1.3.0",
