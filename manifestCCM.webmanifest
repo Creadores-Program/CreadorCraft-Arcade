@@ -1,1 +1,171 @@
-
+{
+  "name": "CreadorCraft Maker",
+  "short_name": "CC Maker",
+  "description": "Crea Tus juegos para CreadorCraft!.",
+  "offline_enabled": true,
+  "android_package_name": "com.ccmaker",
+  "icons": [
+    {
+      "src": "https://creadorcraftcp.blogspot.com/favicon.ico",
+      "sizes": "16x16 24x24 64x64 128x128",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmmhKnPrttHCPftNFdwbC0A38xvMNdrWx8nqkeCl6iglstRSk9pvQyyMXtJXw_bBzJYS1iCyRyC8__nmSY8p_sLA-EGf9NG0zbYR2AbphPfk2BE5FZ1AEr_Hfd4u2pxO987gjhTIVen7-D8PvhNIk6-LLOlY_-1PKGeONx2Q3bOge-lqUikJTeWxWdMA/s32/creadorcraft-logo.1.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose":"any maskable"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmmhKnPrttHCPftNFdwbC0A38xvMNdrWx8nqkeCl6iglstRSk9pvQyyMXtJXw_bBzJYS1iCyRyC8__nmSY8p_sLA-EGf9NG0zbYR2AbphPfk2BE5FZ1AEr_Hfd4u2pxO987gjhTIVen7-D8PvhNIk6-LLOlY_-1PKGeONx2Q3bOge-lqUikJTeWxWdMA/s48/creadorcraft-logo.1.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose":"any maskable"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmmhKnPrttHCPftNFdwbC0A38xvMNdrWx8nqkeCl6iglstRSk9pvQyyMXtJXw_bBzJYS1iCyRyC8__nmSY8p_sLA-EGf9NG0zbYR2AbphPfk2BE5FZ1AEr_Hfd4u2pxO987gjhTIVen7-D8PvhNIk6-LLOlY_-1PKGeONx2Q3bOge-lqUikJTeWxWdMA/s72/creadorcraft-logo.1.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose":"any maskable"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmmhKnPrttHCPftNFdwbC0A38xvMNdrWx8nqkeCl6iglstRSk9pvQyyMXtJXw_bBzJYS1iCyRyC8__nmSY8p_sLA-EGf9NG0zbYR2AbphPfk2BE5FZ1AEr_Hfd4u2pxO987gjhTIVen7-D8PvhNIk6-LLOlY_-1PKGeONx2Q3bOge-lqUikJTeWxWdMA/s96/creadorcraft-logo.1.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose":"any maskable"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmmhKnPrttHCPftNFdwbC0A38xvMNdrWx8nqkeCl6iglstRSk9pvQyyMXtJXw_bBzJYS1iCyRyC8__nmSY8p_sLA-EGf9NG0zbYR2AbphPfk2BE5FZ1AEr_Hfd4u2pxO987gjhTIVen7-D8PvhNIk6-LLOlY_-1PKGeONx2Q3bOge-lqUikJTeWxWdMA/s144/creadorcraft-logo.1.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose":"any maskable"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmmhKnPrttHCPftNFdwbC0A38xvMNdrWx8nqkeCl6iglstRSk9pvQyyMXtJXw_bBzJYS1iCyRyC8__nmSY8p_sLA-EGf9NG0zbYR2AbphPfk2BE5FZ1AEr_Hfd4u2pxO987gjhTIVen7-D8PvhNIk6-LLOlY_-1PKGeONx2Q3bOge-lqUikJTeWxWdMA/s152/creadorcraft-logo.1.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose":"any maskable"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmmhKnPrttHCPftNFdwbC0A38xvMNdrWx8nqkeCl6iglstRSk9pvQyyMXtJXw_bBzJYS1iCyRyC8__nmSY8p_sLA-EGf9NG0zbYR2AbphPfk2BE5FZ1AEr_Hfd4u2pxO987gjhTIVen7-D8PvhNIk6-LLOlY_-1PKGeONx2Q3bOge-lqUikJTeWxWdMA/s192/creadorcraft-logo.1.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose":"any maskable"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmmhKnPrttHCPftNFdwbC0A38xvMNdrWx8nqkeCl6iglstRSk9pvQyyMXtJXw_bBzJYS1iCyRyC8__nmSY8p_sLA-EGf9NG0zbYR2AbphPfk2BE5FZ1AEr_Hfd4u2pxO987gjhTIVen7-D8PvhNIk6-LLOlY_-1PKGeONx2Q3bOge-lqUikJTeWxWdMA/s384/creadorcraft-logo.1.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose":"any maskable"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmmhKnPrttHCPftNFdwbC0A38xvMNdrWx8nqkeCl6iglstRSk9pvQyyMXtJXw_bBzJYS1iCyRyC8__nmSY8p_sLA-EGf9NG0zbYR2AbphPfk2BE5FZ1AEr_Hfd4u2pxO987gjhTIVen7-D8PvhNIk6-LLOlY_-1PKGeONx2Q3bOge-lqUikJTeWxWdMA/s512/creadorcraft-logo.1.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose":"any maskable"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmmhKnPrttHCPftNFdwbC0A38xvMNdrWx8nqkeCl6iglstRSk9pvQyyMXtJXw_bBzJYS1iCyRyC8__nmSY8p_sLA-EGf9NG0zbYR2AbphPfk2BE5FZ1AEr_Hfd4u2pxO987gjhTIVen7-D8PvhNIk6-LLOlY_-1PKGeONx2Q3bOge-lqUikJTeWxWdMA/s800/creadorcraft-logo.1.png",
+      "sizes": "800x800",
+      "type": "image/png",
+      "purpose":"any maskable"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmmhKnPrttHCPftNFdwbC0A38xvMNdrWx8nqkeCl6iglstRSk9pvQyyMXtJXw_bBzJYS1iCyRyC8__nmSY8p_sLA-EGf9NG0zbYR2AbphPfk2BE5FZ1AEr_Hfd4u2pxO987gjhTIVen7-D8PvhNIk6-LLOlY_-1PKGeONx2Q3bOge-lqUikJTeWxWdMA/s1080/creadorcraft-logo.1.png",
+      "sizes": "1080x1080",
+      "type": "image/png",
+      "purpose":"any maskable"
+    }
+  ],
+  "screenshots" : [
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0B3fHyY5HpEF4NrpQgNFWCNePsA9Bmu2HXS0xC0l6SptwfJekvARlwztbVJBkYBJI3s-OY_JDU4lFOh0xLuh8hG8ZCF8sXs-jApc2TTAuR8aTKICKXnyCNkFjjN9Qao0Xv_Ykb1YwrDNR0RP9EzPuGwQMbOI7xxDt6P4QPkZMDyDVnT7_DA-n-eYv41aM/s1600/Screenshot_20230720-220702.png",
+      "sizes": "1600x720",
+      "type": "image/png",
+      "label": "El Mejor inicio de un Juego!/The Best Start of a Game!",
+      "platform": "wide"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjdHU8riSfsClqMm-y9jKV2MtG4cMwdgSIrVY9LqPrx3VViUS7lfErRSU6zXvlr-whm4OGZmz07FXC_jF7Z67yJeSphJzdbOZ4N5anhMvcM9MTe6Mxu4saTFMMGeBCBCuSLud5PWZBO1p9jf-FZjdLBm57ubE_vVla-Iva8i4dY10zsiQhQPnW7zw3pz2g/s1600/Screenshot_20230720-220708.png",
+      "sizes": "1600x720",
+      "type": "image/png",
+      "label": "La configuración del Juego!/Game settings!",
+      "platform": "wide"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXhVao_10cWyJygmnxHPsZpbzcQD2npmFLQfgEOZmgrExLthtzQ6JwOkcnBxbPUviV8m2RkPN7nqyBSZp9GcfaHPiVIN3tz6ZUPS0Cumakobm-io-wiMmXgWFjAbysLX9z3LmYWXzJ8R0iinHweLDCCAgHkjX3KuUMhaOfiAp14U-hDUS_-tdHLbVor-l7/s1600/Screenshot_20230720-220713.png",
+      "sizes": "1600x720",
+      "type": "image/png",
+      "label": "Modo Solitario o con Amigos en Servidores!/Solo Mode or with Friends on Servers!",
+      "platform": "wide"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWSJIiiOS8vDGVzRz5g_gFA9D9q4xARPCaL5gR9pu_gfwX2Xr8FLFDB9cf5pwzLOFF0zEA4Of20DgIPNznrPdjNdknbpG5WDusXZ4iOifhofAi6YIcSgCiNeb6YbjKIVQiY9LHYvWE-veTCIxg0f9DRE1JoeebXkqtqRW1lyL3PECgupBmKIfucEIrbeWX/s1600/Screenshot_20230720-220717.png",
+      "sizes": "1600x720",
+      "type": "image/png",
+      "label": "Puedes Jugar con amigos!/You can play with friends!",
+      "platform": "wide"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmS24Dc0LeEo6myda8TbdGM1jcUdmQqlkSCvBWFsHhJMuuG06eLvmUpLWmq2mL9LMy6vL_y0Hkfvl6okevq92TX1kqCqKQcUuTTS-1nZyuAHLe7ODuzYO9be97eSd7FxErv8gwcjMvuUejCD3p1Hg62YH76hl3021EnpAAGXj4XDYkNQbFZzCPYZKNU-QV/s1600/Screenshot_20230720-220723.png",
+      "sizes": "1600x720",
+      "type": "image/png",
+      "label": "Modo solitario con minijuegos!/Solitaire mode with minigames!",
+      "platform": "wide"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3lY4ljOgrYGOcerOag99jZE4dLnoVxb6-QHR8WlKHZV5NFT3o7Ws57-TC_4n4kcIo9AHvV3Mte2GdLojUIL7zGQrTmufUu8Ki0SnN6y5aMnPejw-qh2KxtvPMo7lZV3bzlqDFcjQkPDM9MIL7W7cv75GtJXDDtNyRmdJGcW-6oQ2vLZ0utN9uu94NkpQP/s1600/Screenshot_20230720-220732.png",
+      "sizes": "1600x720",
+      "type": "image/png",
+      "label": "Paint and Draw",
+      "platform": "wide"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZrNZpmztGpJyeC5CCgjEOmNkrFe5Po_krDeBdnbykkjYeCJzx-C6KD6jWWpT_5A9hvE_zHh4FMVMCSPTbjgyhbHIXvanEQ0OsFHNHU6T8MMGpkjNyMB2GBa2pLTom9iMhSYQ7e_Ddy0SlqrayPlOfm-0PvV4YJYTbX7Lli5R-WFgxHjpc7E_NZUKOkeT4/s1600/Screenshot_20230720-220736.png",
+      "sizes": "1600x720",
+      "type": "image/png",
+      "label": "Paint and Draw",
+      "platform": "wide"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhexM1AwdDf8bvyQDWWeGdtpKK3jeAYIXHaRH7cI1ZQc4kk61T06SxyCQx4u-yzXorOyvfeDpe3eMBC9hYXvoabk8wfUWycmoNHuwKX2BQ1yCutfL8dJo-uzXpEAEbD2qAzQNqlgn4J3eQVsNXdzqcOhR3jOXJJ7AFo8KLSucLtboB0J2HhKelpPxBUDMjU/s1600/Screenshot_20230720-220803.png",
+      "sizes": "1600x720",
+      "type": "image/png",
+      "label": "TikTakToe Color/3 En Raya Color",
+      "platform": "wide"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikdB30DmMSASqwVHBMwuJbD4jEMH99_MnE20TTziJSbwLZgZdHbFYYmId6Hkj2Chf_uCghfJiTWR68txxxz09D8wcvKzlrfg77jeX9glPOICpJUE3NHSgjb-NwDxH8DMeNz1ARiW0yTtn-Gvbu6Loafvmd9LuZdbIujtNlSgl7F8LdJEwkU64NY_J0VHc5/s1600/Screenshot_20230720-220825.png",
+      "sizes": "1600x720",
+      "type": "image/png",
+      "label": "El Ahorcado/Hangman",
+      "platform": "wide"
+    }
+  ],
+  "capture_links": "existing_client_event",
+  "start_url": "https://creadorcraft-maker.blogspot.com/",
+  "scope": "https://creadorcraft-maker.blogspot.com/",
+  "categories": [
+    "games",
+    "entertainment",
+    "graphics",
+    "kids"
+  ],
+  "handle_links":"auto",
+  "display": "fullscreen",
+  "display_override": ["fullscreen", "standalone"],
+  "orientation": "landscape",
+  "launch_handler":{"client_mode":["focus-existing","auto"]},
+  "theme_color": "#008000",
+  "background_color": "#008000",
+  "id": "creadorcraft",
+  "author": "Creadores Program",
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+     "preferred_width": 445
+  },
+  "dir": "auto",
+  "version": "1.3.0",
+  "version_name": "1.4 Oficial Test",
+  "manifest_version": 1.4
+}
