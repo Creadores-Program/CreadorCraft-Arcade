@@ -226,5 +226,3 @@ CodeMirror.defineMode("latino", function(config) {
 });
 
 CodeMirror.defineMIME("text/x-latino", "latino");
-
-});
