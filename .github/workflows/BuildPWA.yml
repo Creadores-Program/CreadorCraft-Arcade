@@ -10,10 +10,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Create Android App from PWA
-        uses: sharadcodes/pwa-to-apk-action@v2
+        uses: sharadcodes/pwa-to-apk-action@v1.0.0
         with:
-          pwa-url: 'https://tu-pwa.com'
-          app-name: 'Mi App Android'
+          pwa-url: 'https://creadorcraftcp.blogspot.com/'
+          app-name: 'CreadorCraft'
           output-dir: 'app'
       - name: Upload APK as artifact
         uses: actions/upload-artifact@v3
