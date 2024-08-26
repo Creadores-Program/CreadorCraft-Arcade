@@ -1,0 +1,22 @@
+name: Build Android App from PWA and Upload APK
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Create Android App from PWA
+        uses: sharadcodes/pwa-to-apk-action@v2
+        with:
+          pwa-url: 'https://tu-pwa.com'
+          app-name: 'Mi App Android'
+          output-dir: 'app'
+      - name: Upload APK as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: android-app
+          path: app/*.apk
