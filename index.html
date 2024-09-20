@@ -360,7 +360,7 @@ https://cdn.jsdelivr.net/npm/css-polyfills/dist/css-polyfills.min.js
         DebugEnable: null,
         getGame: {
           getVersion: "0.5.7 ALPHA",
-          getBetaVersion: "2"
+          getBetaVersion: "3"
         }
         };
         var noloadg;
@@ -2663,8 +2663,8 @@ window.resizeTo(fixedWidth, fixedHeight);});
           if(properties.BetaEnable == "true"){
             if(!localStorage.getItem("updateAdBeta") || localStorage.getItem("updateAdBeta") != properties.getGame.getBetaVersion){
               localStorage.setItem("updateAdBeta", properties.getGame.getBetaVersion);
-              alert("Novedades de CreadorCraft V." + properties.getGame.getVersion + " Beta " + properties.getGame.getBetaVersion + "\n•Se añadió soporte para LiveScript en Juegos creados con CreadorCraft Maker!");
-              alert("What's New in CreatorCraft V." + properties.getGame.getVersion + "." + properties.getGame.getBetaVersion + "\n•Added support for LiveScript in Games created with CreadorCraft Maker!");
+              alert("Novedades de CreadorCraft V." + properties.getGame.getVersion + " Beta " + properties.getGame.getBetaVersion + "\n•Se quito RushKart y CreadorCraft modo Historia");
+              alert("What's New in CreatorCraft V." + properties.getGame.getVersion + "." + properties.getGame.getBetaVersion + "\n•RushKart and CreadorCraft Story Mode have been removed");
               
             }
           }
