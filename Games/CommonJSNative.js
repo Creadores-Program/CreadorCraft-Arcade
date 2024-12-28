@@ -24,24 +24,7 @@
 					}
 				}
 			}
-      //CreadorCraft Extra
-      if(!m){
-        async function CreadorCraftFile(){
-          let data = await GameProps.getFileGame().file(path).async("string");
-          if(path.endsWith(".json")){
-            //save in cache
-            require.modules[path] = new Function("module", "exports", "require", "module.exports = "+data+";");
-          }else if(path.endsWith(".js")){
-            //save in cache
-            require.modules[path] = new Function("module", "exports", "require", data);
-          }else{
-            require.modules[path] = function(module, exports, require){ module.exports = data; };
-          }
-          return require.modules[path];
-        }
-        m = CreadorCraftFile();
         if(!m) throw "Couldn't find module for: " + path;
-      }
 		}
 		// Instantiate the module if it's export object is not yet defined
 		if (!m.exports) {
@@ -106,6 +89,24 @@
 	 */
 	require.register = function (path, fn) {
 		require.modules[path] = fn;
+	};
+	require.CreadorCraftInit = async function () {
+		const files = GameProps.getFileGame();
+		for (const [relativePath, file] of Object.entries(files)) {
+			if (relativePath.endsWith("/")) continue;
+			let data = await file.async('string');
+			if (relativePath.endsWith(".js")) {
+				require.register(relativePath, new Function('module', 'exports', 'require', data));
+			} else if (relativePath.endsWith(".json")) {
+				require.register(relativePath, function (module, exports, require) {
+					module.exports = JSON.parse(data);
+				});
+			} else {
+				require.register(relativePath, function (module) {
+					module.exports = data;
+				});
+			}
+		}
 	};
 
 	// Expose
