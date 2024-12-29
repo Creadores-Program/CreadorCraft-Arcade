@@ -92,9 +92,14 @@
 	};
 	require.CreadorCraftInit = async function () {
 		const files = GameProps.getFileGame();
-		for (const [relativePath, file] of Object.entries(files)) {
+		await files.forEach(async function(relativePath, file){
 			if (relativePath.endsWith("/")) continue;
-			let data = await file.async('string');
+			let data;
+			try{
+			  data = await file.async('string');
+			}catch(err){
+				data = await file.async("blob");
+			}
 			if (relativePath.endsWith(".js")) {
 				require.register(relativePath, new Function('module', 'exports', 'require', data));
 			} else if (relativePath.endsWith(".json")) {
@@ -106,7 +111,7 @@
 					module.exports = data;
 				});
 			}
-		}
+		});
 	};
 
 	// Expose
