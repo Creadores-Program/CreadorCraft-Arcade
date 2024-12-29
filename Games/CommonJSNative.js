@@ -93,7 +93,7 @@
 	require.CreadorCraftInit = async function () {
 		const files = GameProps.getFileGame();
 		await files.forEach(async function(relativePath, file){
-			if (relativePath.endsWith("/")) continue;
+			if (relativePath.endsWith("/")) return;
 			let data;
 			try{
 			  data = await file.async('string');
