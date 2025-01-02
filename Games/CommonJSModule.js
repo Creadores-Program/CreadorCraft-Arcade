@@ -9,4 +9,4 @@
     return module;
   }
   root.requireModule = requireModule;
-})(typeof window !== 'undefined') ? window : global);
+})((typeof window !== 'undefined') ? window : global);
