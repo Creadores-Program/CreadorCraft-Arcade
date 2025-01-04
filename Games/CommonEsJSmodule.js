@@ -10,5 +10,5 @@ import * as EsJS from 'https://esm.run/@es-js/core';
     const module = await import(modules[path]);
     return module;
   }
-  root.requireTSModule = requireEsJSModule;
+  root.requireEsJSModule = requireEsJSModule;
 })((typeof window !== 'undefined') ? window : global);
