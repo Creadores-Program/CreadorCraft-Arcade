@@ -108,7 +108,11 @@ WebPerl by haukex,
 
 Lua.vm by Lua.vm,
 
-Bowser by lancedikson
+Bowser by lancedikson,
+
+WebR by WebR,
+
+EJS by EJS,
 
 Polyfill.io by Financial-Times.
 
