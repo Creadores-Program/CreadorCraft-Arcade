@@ -1,0 +1,6 @@
+{
+  "name": "ServerExample",
+  "description": "Un ejemplo de Juego Multijugador",
+  "mainHtml": "index.html",
+  "mainJS": "main.js"
+}
