@@ -1,0 +1,10 @@
+{
+  "name": "ServerExampleCC",
+  "version": "1.0.0",
+  "author": "Creadores Program",
+  "license": "MIT",
+  "dependencies":{
+    "ServerWebGamePost": "1.2.0"
+  },
+  "main": "index.js"
+}
