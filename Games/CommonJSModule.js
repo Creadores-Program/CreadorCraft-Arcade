@@ -10,9 +10,8 @@
 
   async function requireModule(path) {
     if (!modules.hasOwnProperty(path)) {
-      let originalBlob = await GameProps.getFileGame().file(path).async("blob");
+      let originalBlob = await GameProps.getFileGame().file(path).async("string");
       let mime = getMimeType(path);
-      // Crea un nuevo Blob con el MIME type definido
       let fixedBlob = new Blob([originalBlob], { type: mime });
       modules[path] = URL.createObjectURL(fixedBlob);
     }
