@@ -43,119 +43,116 @@ Abre el Juego (link)
 
 Pon los tres puntitos de arriba a la derecha en el navegador y ponle "agregar al Inicio" o "Instalar" y listo!
 
-# Credits:
-Graphic design: Samurai97, ManuelmcYOUTUBE and zNOoBy_
+# Creditos:
+Diseñadores Graficos: Samurai97, ManuelmcYOUTUBE y zNOoBy_
 
-Programmer and Owner: Trollhunters501
+Programador y Dueño: Trollhunters501
 
-They helped with the Code: Daxolomeo, RextDev, Devcheck, Copilot IA, Bard By Google and Aldo_Rodrigo349
+Ayudaron al Codigo: Daxolomeo, RextDev, Devcheck, Microsoft Copilot IA, Gemini de Google, Github Copilot y Aldo_Rodrigo349
 
-Scripts Used in the Game:
+Scripts Usados en el Juego:
 
-API's Google By Google,
+Google API's de Google
 
-Google Fonts API By Google,
+Google Fonts de Google
 
-Clipboard.js By zenorocha,
+Clipboard.js de Zeno Rocha
 
-JQuery By JQuery,
+JQuery de The jQuery Foundation
 
-jquery-migrate by JQuery,
+ImagesLoaded de David DeSandro
 
-imagesloaded By desandro,
+Glide de Glide
 
-Glide By Glide,
+masory de David DeSandro
 
-masonry By David DeSandro,
+Lodash de Lodash
 
-Loadash by Loadash,
+AMP JS de AMP Project
 
-AMP JS by AMP JS,
+TypeScript de Microsoft
 
-TypeScript by Microsoft,
+Material UI de Material UI
 
-Material-UI,
+Babel de Babel
 
-Babel by Babel,
+css-Polifill de philschatz
 
-css-Polifill by philschatz,
+Axios de Axios
 
-Axios,
+JSZip de Stuart Knightley
 
-JSZip by JSZip,
+CodeMirrior de Marijn Haverbeke
 
-CodeMirrior by CodeMirrior,
+PyScript de PyScript
 
-PyScript by PyScript,
+CoffeeScript de CoffeeScript
 
-CoffeeScript by CoffeeScript,
+SCSS de Sass
 
-SCSS by SCSS,
+EJS de Enzonotario y Creadores Program
 
-EsJS by Enzonotario & Creadores Program,
+CommonJS de Creadores Program & popeindustries
 
-CommonJS by Creadores Program & popeindustries
+Marked de Markedjs
 
-Marked by markedjs,
+Three.js de Three.js
 
-Three.js by Three.js,
+PHP-Wasm de PHP-Wasm
 
-PHP-wasm by PHP-wasm,
+Ruby wasm-wasi de Ruby
 
-Ruby wasm-wasi 3.3 by Ruby,
+WebPerl de haukex
 
-WebPerl by haukex,
+Lua.vm de Lua.vm
 
-Lua.vm by Lua.vm,
+Bowser de lancedikson
 
-Bowser by lancedikson,
+Ejs de Ejs
 
-EJS by EJS,
+Polyfill.io de Financial-Times
 
-Polyfill.io by Financial-Times.
+Chat Global: WidgetBot y Discord
 
-Global Chat: Discord Y Widget Bot.
+Login: Discord
 
-Login: Discord.
+Traductor: Google Translate
 
-Game Music:
+Musica y Sonidos:
 
-Epic Boss Fight,
+Epic Boss Fight
 
-Don't Rush Inst.,
+Don't Rush Inst.
 
-Rush 2,
+Rush 2
 
-Combat Zone,
+Combat Zone
 
-Arcade Center,
+Arcade Center
 
-Maybe Not.,
+Maybe Not.
 
-My Galaxy,
+My Galaxy
 
-Comic Book,
+Comic Book
 
-Neon Cityscape,
+Neon Cityscape
 
-Retro,
+Retro
 
 Uncoventioal Inst.
 
-Some Designs created with:
+Diseños Creados en:
 
 Canva
 
 8 Bit
 
-Sound Effects created by:
+Efectos de sonido: Kinemaster
 
-Kinemaster
+Patrocinadores:
 
-Special Credits to: PaleoStudio Games ©2025
-
-Creadores Program ©2025
-
+EsJS
 ![Powered by Blogger](https://buttons.blogger.com/bloggerbutton2.gif)
 
 ## Try the Game:
