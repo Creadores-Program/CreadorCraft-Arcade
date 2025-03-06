@@ -153,6 +153,7 @@ Efectos de sonido: Kinemaster
 Patrocinadores:
 
 EsJS
+
 ![Powered by Blogger](https://buttons.blogger.com/bloggerbutton2.gif)
 
 ## Try the Game:
