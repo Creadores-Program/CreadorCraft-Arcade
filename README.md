@@ -90,7 +90,7 @@ CoffeeScript de CoffeeScript
 
 SCSS de Sass
 
-EJS de Enzonotario y Creadores Program
+EsJS de Enzonotario y Creadores Program
 
 CommonJS de Creadores Program & popeindustries
 
