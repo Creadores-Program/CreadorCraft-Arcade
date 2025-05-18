@@ -1,9 +1,9 @@
 class LoadUrlCC {
-    async static fileToUrl(path, mimetype){
+    static async fileToUrl(path, mimetype){
         let subBlob = await GameProps.getFileGame().file(path).Async("blob");
         return URL.createObjectURL(new Blob([subBlob], { type: mimetype || "image/png" }));
     }
-    async static setUrlToImg(img, path){
+    static async setUrlToImg(img, path){
         let url = await LoadUrlCC.fileToUrl(path);
         img.src = url;
     }
