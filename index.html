@@ -65,7 +65,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script async src="https://cdn.ampproject.org/v0.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-migrate@latest/dist/jquery-migrate.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-color@latest/dist/jquery.color.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -77,6 +76,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bowser@2.11.0/es5.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.5/dist/purify.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/marked/15.0.7/marked.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'></script>
     <script>
       function googleTranslateElementInit() {
         new google.translate.TranslateElement({pageLanguage: 'es'}, 'google_translate_element');
@@ -260,7 +260,7 @@
             <button style="font-size: 5vw;" onclick="properties.soundClick.play(); (async function(){ await swal('CreadorCraft', '⚠️⚠️Recuerda verificar el origen del juego si no es de CreadorCraft Shop porfavor verifica si no tiene virus puedes usar VirusTotal!⚠️⚠️', 'info'); UpCustGame.click(); })();">Subir Juego</button><br/>
             <a target="_blank" href="https://creadorcraft-maker.blogspot.com/"><button onclick="properties.soundClick.play();"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGJdVPkhP-lQbu9H4A1GguimVGEba9SVAOs-QC-7B9Ju9EcVi6yz23Kk9nc_Mn8eIC-q7aogeBJM08ofGID2oNgaWEhcf4tVGHDgH49A8q7gJv_DhIPbaJjwvgpLdbh8JvVlHW2_hbi6wVPIyQAR5VN09pIdD7C6VwBjR18AdQvqH2gy6_vqj-UF993bwo/s1600/20230923_012014_0000.png" alt="CCM" width="30vw"/> <span style="color: green; font-size: 5vw;">Abrir CreadorCraft Maker</span></button></a>
           </center>
-          <button style="position: fixed; top: 50%; left: 2vw; transform: translateY(-50%);" onclick="properties.soundClick.play(); $('#selectionInterface').hide(); $('#globalChatInterface').show();"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmVYp8o65Ga6lRg0_o4BQp_WKjDBR7D80E3_F3LbYDQ4k2WMVPIbxVxnVYxDYeolcJST9OT8R2M5x9VLFlfM2P9UZ2GQwSwOSHYlyNKcIWTXshMQty5GEE0fDhtqiFwVOAi96HCZ-Mh3I4MUt2UQwWOA4f6258t5vqB4labBQQhRBkZhchZJEt616LMQ/s1080/20230223_210226_0001.png" width='45vw' height='45vw'/><br/>Chat Global</button>
+          <button style="position: fixed; top: 50%; left: 2vw; transform: translateY(-50%);" onclick="properties.soundClick.play(); $('#selectionInterface').hide(); (async function(){ await startGchat(); $('#globalChatInterface').show(); })()"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmVYp8o65Ga6lRg0_o4BQp_WKjDBR7D80E3_F3LbYDQ4k2WMVPIbxVxnVYxDYeolcJST9OT8R2M5x9VLFlfM2P9UZ2GQwSwOSHYlyNKcIWTXshMQty5GEE0fDhtqiFwVOAi96HCZ-Mh3I4MUt2UQwWOA4f6258t5vqB4labBQQhRBkZhchZJEt616LMQ/s1080/20230223_210226_0001.png" width='45vw' height='45vw'/><br/>Chat Global</button>
         </div>
         <div id="customGameInterface" style="background-color: lightblue;" class="InterfazCC HiddenDef"><center>
           <div style="width: 80%; height: 9vw; font-size: 5vw; background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOOq5hnMRdbZJJWxjmJhqQD7i0_XoQs7-I0FKJ4zhVWruQ8Uj4Gr88qTB433cuI-GkTvHt71V9j1rfZ1zUA4Jk5juNbyKCkby0G0pGxk9_qgGMetrTpS-PyHugKfnsBtdlZyhcbfoFwjfAuNmVP9Kux6wGJEI78jLzEV5WFNU3VJMBalcdswFKUFn-TgYB/s1600/Select_Game_Mode_20250207_080805_0002.png') 50% 50% no-repeat blue; background-size: contain; text-shadow: 2px 2px 4px #000000;" id="customGameLogo"></div><br/>
@@ -330,7 +330,20 @@
           </div>
         </div>
         <div id="globalChatInterface" class="InterfazCC HiddenDef" style="background-color: gray;">
-          <widgetbot server="1105653858455269526" channel="1105653859126362184" class="InterfazCC" style="height: 90%;"></widgetbot>
+          <div id="globalChatBox" style="display: flex; flex-direction: column; height: 100%; width: 100%;">
+            <div style="background: #222; color: #fff; padding: 1vw; font-size: 4vw; display: flex; align-items: center; justify-content: space-between;">
+              <span>Chat Global</span>
+              <button id="showEmojisBtn" style="font-size: 3vw;">😀</button>
+            </div>
+            <div id="emojiList" style="display:none; background:#fff; color:#222; padding:1vw; font-size:3vw; max-height:30vw; overflow-y:auto; border-bottom:1px solid #ccc;">
+              <b>Emojis</b>
+            </div>
+            <div id="globalChatMessages" style="flex:1; overflow-y:auto; background:#eee; padding:1vw;"></div>
+            <div style="display:flex; gap:1vw; padding:1vw; background:#ddd;">
+              <input id="globalChatInput" type="text" maxlength="500" placeholder="Escribe tu mensaje (Markdown y :Emoji: soportados)" style="flex:1; font-size:3vw; border-radius:5px; border:1px solid #ccc; padding:0.5vw;">
+              <button id="sendGlobalMsgBtn" style="font-size:3vw;">Enviar</button>
+            </div>
+          </div>
         </div>
         <div id="creditsInterface" class="InterfazCC HiddenDef" style="background-color: #56A5EC; overflow-y: scroll; scroll-behavior: initial;">
           <center>
@@ -403,8 +416,6 @@
               Ejs de Ejs
               <br/>
               Polyfill.io de Financial-Times
-              <br/>
-              Chat Global: WidgetBot y Discord
               <br/>
               Login: Discord
               <br/>
@@ -537,10 +548,11 @@
         errorGameMessage: '[BUG REPORT] Hubo un error o bug en el Juego! Error 5001! Se ha enviado el reporte a Creadores Program ©2025!',
         confMessageExit: "Seguro que Quieres Salir del Juego?",
         getGame: {
-          getVersion: "0.7.4 ALFA",
+          getVersion: "0.7.6 ALFA",
           getBetaVersion: "0"
         }
       };
+      let GchatInterval;
       var timeCCredit;
       Object.defineProperty(navigator, "getPWA", { get: function(){ return properties; } });
       console.info("Cargando...");
@@ -709,6 +721,77 @@
       setTimeout("$('#present').fadeOut();", 3000);
       let noloadG = setTimeout("$('#loadernotloadbtncon').show();", 120000);
 
+      //chat Global
+      const CHAT_API_URL = "https://creador-craft-server-proxy.vercel.app/api/GlobalChat";
+      const emojiMap = {};
+      async function startGchat(){
+        let chatH = await (await fetch(CHAT_API_URL)).json();
+        renderChatMessages(chatH);
+        if(GchatInterval) return;
+        GchatInterval = setInterval(async () => {
+          try {
+            let res = await fetch(CHAT_API_URL);
+            const chatData = await res.json();
+            renderChatMessages(chatData);
+          }catch (error) {
+          }
+        }, 2000);
+      }
+      function renderChatMessages(messages) {
+        const $box = $("#globalChatMessages");
+        $box.empty();
+        messages.forEach(msg => {
+          let text = msg.msg;
+          Object.keys(emojiMap).forEach(code => {
+            text = text.replaceAll(code, emojiMap[code]);
+          });
+          let htmlMsg = DOMPurify.sanitize(marked.parse(text));
+          let discordIcon = msg.isDiscordUser ? `<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkevaDWyAr3r8WJIFCKvRhqVQwN5jZDoIqKF_thcT4I4BPHTQhFd-il2L_seHZ8yh70HrdyipJ5pmDn2OyzVjBBbOtoiD6Xa0WmEVGxh_GghUVUgZEtwFxMThB63xW5HfXijjkEjfwZoyMrK-bWx17ew7X4PawcmLSuELMKR0xBS38NbOTjHeDbhvfNEU1/s1600/verified_user_FILL1_wght400_GRAD0_opsz48.png" alt="Discord" style="height:2.4vw;vertical-align:middle;margin-left:0.5vw;">` : "";
+          let reportBtn = `<button class="reportMsgBtn" data-userid="${msg.userId}" data-msgid="${msg.id}" data-username="${DOMPurify.sanitize(msg.username)}" data-msgtext="${DOMPurify.sanitize(msg.msg)}" style="font-size:2vw; color:red; margin-left:1vw;">Report</button>`;
+          $box.append(`
+            <div style="display:flex;align-items:flex-start;margin-bottom:1vw;">
+              <img src="${msg.avatar}" style="width:6vw;height:6vw;border-radius:50%;margin-right:1vw;">
+              <div style="flex:1;">
+                <b style="color:${msg.isDiscordUser ? '#5865F2' : '#333'}">${DOMPurify.sanitize(msg.username)}${discordIcon}</b>
+                <span style="font-size:2vw;color:#888;">${new Date(msg.date).toLocaleTimeString()}</span>
+                <div style="font-size:3vw;">${htmlMsg}</div>
+              </div>
+            </div>
+          `);
+        });
+        $box.scrollTop($box[0].scrollHeight);
+
+        $(".reportMsgBtn").off("click").on("click", async function() {
+          const userIdTarget = $(this).data("userid");
+          const msgId = $(this).data("msgid");
+          const username = $(this).data("username");
+          const msgText = $(this).data("msgtext");
+          let reason = await customPrompt('Reportar Mensaje', `¿Por qué quieres reportar a ${username}? Escribe la razón:`);
+          if(!reason || reason.trim().length < 3){
+            await swal("CreadorCraft", "Razón de reporte inválida. Debes escribir una razón válida.", "error");
+            return;
+          }
+          let confir = await customConfirm('Confirmar Reporte', `¿Estás seguro de que quieres reportar a ${username}?\nMensaje: "${msgText}"\n Razón: "${reason}"`);
+          if(!confir){
+            return;
+          }
+          await fetch(CHAT_API_URL, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              type: "reportUser",
+              userId: properties.playerID,
+              userIdTarget: userIdTarget,
+              reason: reason,
+              msg: msgText
+            })
+          });
+          await swal("CreadorCraft", "Reporte enviado correctamente!\n¡Gracias por ayudar a mantener la comunidad segura!", "success");
+        });
+      }
+
       //events
       window.addEventListener('beforeunload', function (event) {
           event.preventDefault();
@@ -754,6 +837,10 @@
         $("#creditsInterface").hide();
         $("#shop").hide();
         $("#globalChatInterface").hide();
+        if(GchatInterval != null){
+          clearInterval(GchatInterval);
+          GchatInterval = null;
+        }
         $("#configInterface").hide();
         $("#customGameInterface").hide();
         $("#selectionInterface").hide();
@@ -763,6 +850,32 @@
         clearInterval(timeCCredit);
         $("#loaderBar").prop("value", null);
         $("#loaderBar").html("");
+      });
+      sendGlobalMsgBtn.addEventListener("click", async function(){
+        let msg = globalChatInput.value;
+        if(msg == null || msg.trim().length < 1){
+          await swal("CreadorCraft", "El mensaje no puede estar vacío!", "error");
+          return;
+        }
+        if(msg.length > 500){
+          await swal("CreadorCraft", "El mensaje no puede tener más de 500 caracteres!", "error");
+          return;
+        }
+        await fetch(CHAT_API_URL, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            type: "chat",
+            userId: properties.playerID,
+            username: properties.playerName,
+            avatar: properties.playerAvatar,
+            isDiscordUser: (properties.discordAuth == "true"),
+            msg: msg
+          })
+        });
+        globalChatInput.value = '';
       });
       loadernotloadbtncon.addEventListener("click", function(){
         properties.soundClick.play();
@@ -838,6 +951,21 @@
           $("#Loader").fadeOut();
           return;
         }
+        //eventos del Juego(Celebracion, etc)
+        let eventosC = await (await fetch("https://creador-craft-server-proxy.vercel.app/api/EventsList")).json();
+        if(eventosC.length > 0){
+          if(localStorage.getItem("eventosCreadorCraft") == null){
+            localStorage.setItem("eventosCreadorCraft", "{}");
+          }
+          let alReadyEvents = JSON.parse(localStorage.getItem("eventosCreadorCraft"));
+          await eventosC.forEach(async evento => {
+            if(!alReadyEvents[evento.id]){
+              await swal(evento.title, evento.description, evento.icon);
+              alReadyEvents[evento.id] = true;
+            }
+          });
+          localStorage.setItem("eventosCreadorCraft", JSON.stringify(alReadyEvents));
+        }
         properties.playerID = localStorage.getItem('playerID');
         properties.playerName = localStorage.getItem("playerName");
         properties.discordAuth = localStorage.getItem("DiscordAuth");
@@ -904,7 +1032,7 @@
         }
         setPorcentL("0.33");
         let mains = {};
-        let ScriptsDef = "<script src='https://cdn.jsdelivr.net/gh/Creadores-Program/CreadorCraft-Arcade@main/Games/LoadUrlCC.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://cdn.jsdelivr.net/npm/css-polyfills/dist/css-polyfills.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><link rel='preconnect' href='https://fonts.googleapis.com'/><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin='anonymous' referrerpolicy='no-referrer'/><link href='https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap' rel='stylesheet' crossorigin='anonymous' referrerpolicy='no-referrer'/><link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200' crossorigin='anonymous' referrerpolicy='no-referrer'/><link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/glider-js/glider.min.css' crossorigin='anonymous' referrerpolicy='no-referrer'/><script src='https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.26.4/babel.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://cdn.polyfill.io/v3/polyfill.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://resources.blogblog.com/blogblog/data/res/3060376906-indie_compiled.js' async='true'><"+"/script><script async='true' src='https://www.googletagmanager.com/gtag/js?id=G-B6NCE6K8MK' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script async src='https://cdn.ampproject.org/v0.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://cdn.jsdelivr.net/npm/@widgetbot/html-embed' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://cdn.jsdelivr.net/npm/jquery-migrate@latest/dist/jquery-migrate.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://cdn.jsdelivr.net/npm/jquery-color@latest/dist/jquery.color.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script async='async' src='https://unpkg.com/imagesloaded/imagesloaded.pkgd.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script async='async' src='https://unpkg.com/masonry-layout/dist/masonry.pkgd.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://cdn.jsdelivr.net/npm/glider-js/glider.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://cdn.jsdelivr.net/npm/lodash/lodash.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://cdnjs.cloudflare.com/ajax/libs/material-ui/5.0.0-beta.5/index.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://cdn.jsdelivr.net/npm/bowser@2.11.0/es5.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://unpkg.com/htmx.org' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script>";
+        let ScriptsDef = "<script src='https://cdn.jsdelivr.net/gh/Creadores-Program/CreadorCraft-Arcade@main/Games/LoadUrlCC.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://cdn.jsdelivr.net/npm/css-polyfills/dist/css-polyfills.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><link rel='preconnect' href='https://fonts.googleapis.com'/><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin='anonymous' referrerpolicy='no-referrer'/><link href='https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap' rel='stylesheet' crossorigin='anonymous' referrerpolicy='no-referrer'/><link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200' crossorigin='anonymous' referrerpolicy='no-referrer'/><link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/glider-js/glider.min.css' crossorigin='anonymous' referrerpolicy='no-referrer'/><script src='https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.26.4/babel.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://cdn.polyfill.io/v3/polyfill.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://resources.blogblog.com/blogblog/data/res/3060376906-indie_compiled.js' async='true'><"+"/script><script async='true' src='https://www.googletagmanager.com/gtag/js?id=G-B6NCE6K8MK' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script async src='https://cdn.ampproject.org/v0.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://cdn.jsdelivr.net/npm/jquery-migrate@latest/dist/jquery-migrate.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://cdn.jsdelivr.net/npm/jquery-color@latest/dist/jquery.color.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script async='async' src='https://unpkg.com/imagesloaded/imagesloaded.pkgd.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script async='async' src='https://unpkg.com/masonry-layout/dist/masonry.pkgd.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://cdn.jsdelivr.net/npm/glider-js/glider.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://cdn.jsdelivr.net/npm/lodash/lodash.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://cdnjs.cloudflare.com/ajax/libs/material-ui/5.0.0-beta.5/index.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://cdn.jsdelivr.net/npm/bowser@2.11.0/es5.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script><script src='https://unpkg.com/htmx.org' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script>";
         for(let option of Object.keys(maniCustom)){
           if(option.startsWith("main")){
             mains[option] = await zipCust.file(maniCustom[option]).async("string");
