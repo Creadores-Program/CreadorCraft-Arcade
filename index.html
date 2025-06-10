@@ -722,7 +722,7 @@
       let noloadG = setTimeout("$('#loadernotloadbtncon').show();", 120000);
 
       //chat Global
-      const CHAT_API_URL = "https://creador-craft-server-proxy.vercel.app/api/GlobalChat";
+      const CHAT_API_URL = "https://creador-craft-server-proxy.vercel.app/api/ChatGlobal";
       const emojiMap = {};
       async function startGchat(){
         let chatH = await (await fetch(CHAT_API_URL)).json();
