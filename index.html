@@ -151,9 +151,46 @@
         button {
           background-color: lightblue;
           border-radius: 5px;
+          border: none;
+          border-radius: 0.7vw;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+          transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+          padding: 0.7vw 2vw;
+          font-family: inherit;
+          outline: none;
+        }
+        button:active{
+          transform: scale(0.97);
+          box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+        }
+        button:focus {
+          outline: 2px solid #56A5EC;
         }
         input {
           background-color: lightblue;
+        }
+        input[type="text"], input[type="password"], input[type="email"] {
+          border: 1.5px solid #b0c4de;
+          border-radius: 0.5vw;
+          padding: 0.7vw 1vw;
+          font-size: 2.4vw;
+          background: #f8fbff;
+          transition: border 0.2s;
+        }
+        input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+          border: 1.5px solid #56A5EC;
+          background: #fff;
+        }
+        ::-webkit-scrollbar {
+          width: 0.7vw;
+          background: #e3eaf3;
+        }
+        ::-webkit-scrollbar-thumb {
+          background: #b0c4de;
+          border-radius: 0.5vw;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+          background: #56A5EC;
         }
         .cookie-banner p {
             margin: 0;
@@ -182,6 +219,30 @@
           scroll-behavior: initial;
           right: 0%;
           background-color: #50C878;
+        }
+        .configInterface, .InterfazCC, #profileUserConfig {
+          box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+          border-radius: 1vw;
+          border: 1.5px solid #e3eaf3;
+          background-clip: padding-box;
+        }
+        div[style*="font-size: 5vw;"] {
+          letter-spacing: 0.05em;
+          text-shadow: 0 2px 8px rgba(86,165,236,0.08);
+          font-weight: 600;
+        }
+        #fotoPerfilConf, .InterfazCC img[alt="PerfilFoto"] {
+          border: 2.5px solid #56A5EC;
+          box-shadow: 0 2px 12px rgba(86,165,236,0.08);
+        }
+        a, a:visited {
+          color: #56A5EC;
+          text-decoration: none;
+          transition: color 0.2s;
+        }
+        a:hover {
+          color: #1d7ed6;
+          text-decoration: underline;
         }
         @keyframes customFlip {
           0% {
