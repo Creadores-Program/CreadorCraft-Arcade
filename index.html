@@ -367,7 +367,7 @@
         <div id="selectionInterface" class="InterfazCC HiddenDef" style="background-color: #56A5EC;">
           <center>
             <div style="background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOOq5hnMRdbZJJWxjmJhqQD7i0_XoQs7-I0FKJ4zhVWruQ8Uj4Gr88qTB433cuI-GkTvHt71V9j1rfZ1zUA4Jk5juNbyKCkby0G0pGxk9_qgGMetrTpS-PyHugKfnsBtdlZyhcbfoFwjfAuNmVP9Kux6wGJEI78jLzEV5WFNU3VJMBalcdswFKUFn-TgYB/s1600/Select_Game_Mode_20250207_080805_0002.png') 50% 50% no-repeat blue; background-size: contain; width: 80%; height: 9vw; font-size: 9vw; color: palegoldenrod; text-shadow: 2px 2px 4px #000000;">Seleccionar <span style="color: blueviolet;">Juego</span></div><br/>
-            <button style="font-size: 5vw;" onclick="renderGamesCarousel(); $('#selectionInterface').hide(); $('#listGames').fadeIn();">Lista de Juegos</button>
+            <button style="font-size: 5vw;" onclick="properties.soundClick.play(); renderGamesCarousel(); $('#selectionInterface').hide(); $('#listGames').fadeIn();">Lista de Juegos</button><br/>
             <input type="file" id="UpCustGame" hidden accept=".zip"/>
             <button style="font-size: 5vw;" onclick="properties.soundClick.play(); (async function(){ await swal('CreadorCraft', '⚠️⚠️Recuerda verificar el origen del juego si no es de CreadorCraft Shop porfavor verifica si no tiene virus puedes usar VirusTotal!⚠️⚠️', 'info'); UpCustGame.click(); })();">Subir Juego</button><br/>
             <a target="_blank" href="https://creadorcraft-maker.blogspot.com/"><button onclick="properties.soundClick.play();"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGJdVPkhP-lQbu9H4A1GguimVGEba9SVAOs-QC-7B9Ju9EcVi6yz23Kk9nc_Mn8eIC-q7aogeBJM08ofGID2oNgaWEhcf4tVGHDgH49A8q7gJv_DhIPbaJjwvgpLdbh8JvVlHW2_hbi6wVPIyQAR5VN09pIdD7C6VwBjR18AdQvqH2gy6_vqj-UF993bwo/s1600/20230923_012014_0000.png" alt="CCM" width="30vw"/> <span style="color: green; font-size: 5vw;">Abrir CreadorCraft Maker</span></button></a>
@@ -1100,10 +1100,15 @@
           if($(e.target).closest(".deleteGameBtn").length){
             return;
           }
+          properties.soundClick.play();
           loadCreadorCraftGame100API($(this).data("uuid"));
         });
-        $(".deleteGameBtn").off("click").on("click", function(e){
+        $(".deleteGameBtn").off("click").on("click", async function(e){
           e.stopPropagation();
+          properties.soundWarning.play();
+          if(!(await customConfirm("Eliminar Juego", "Seguro que Quieres Eliminar el Juego?"))){
+            return;
+          }
           let uuidG = $(this).data("index");
           GamesList.splice(GamesList.indexOf(uuidG), 1);
           delete GamesInfo[uuidG];
