@@ -14,7 +14,7 @@ window.CreadorCraftLanAPI = class CreadorCraftLanAPI {
     #eventListenersclose = [];
     #eventListenerserror = [];
     candidates = [];
-    async static createInicializer(){
+    static async createInicializer(){
         let instance = new window.CreadorCraftLanAPI(true);
         let jsonres;
         try{
@@ -30,7 +30,7 @@ window.CreadorCraftLanAPI = class CreadorCraftLanAPI {
             instance: instance
         };
     }
-    async static createResponder(offer){
+    static async createResponder(offer){
         let instance = new window.CreadorCraftLanAPI(false);
         let jsonres;
         try{
@@ -125,6 +125,7 @@ window.CreadorCraftLanAPI = class CreadorCraftLanAPI {
         }
     }
     addEventListener(eventName, listener){
+        eventName = eventName.toLowerCase();
         if (!this["#eventListeners"+eventName]) {
             console.warn(this.#prefix+"No Existe el evento '"+eventName+"'");
             return;
