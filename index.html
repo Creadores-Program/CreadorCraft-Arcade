@@ -1086,6 +1086,10 @@
       function renderGamesCarousel(){
         let $carousel = $("#gamesCarousel");
         $carousel.empty();
+        if(GamesList.length == 0){
+          $carousel.append("<div class='gameCard' style='width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;'><h2>No hay Juegos Guardados!</h2></div>");
+          return;
+        }
         for(let gameid of GamesList){
           let game = GamesInfo[gameid];
           $carousel.append(`
