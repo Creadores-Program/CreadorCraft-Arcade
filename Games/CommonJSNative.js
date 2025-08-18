@@ -92,8 +92,9 @@
 	};
 	require.CreadorCraftInit = async function () {
 		const files = GameProps.getFileGame();
-		await files.forEach(async function(relativePath, file){
-			if (relativePath.endsWith("/")) return;
+		for(let relativePath in files.files){
+			let file = await files.files[relativePath];
+			if (relativePath.endsWith("/")) continue;
 			let data;
 			try{
 			  data = await file.async('string');
@@ -111,7 +112,7 @@
 					module.exports = data;
 				});
 			}
-		});
+		}
 	};
 
 	// Expose
