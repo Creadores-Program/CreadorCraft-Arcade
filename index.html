@@ -657,7 +657,7 @@
         TimeoutGame: new AudioGame("https://cdn.jsdelivr.net/gh/Creadores-Program/CreadorCraft-Arcade/music/TimeoutGame.ogg"),
         errorGameMessage: '[BUG REPORT] Hubo un error o bug en el Juego! Error 5001! Se ha enviado el reporte a Creadores Program ©2025!',
         getGame: {
-          getVersion: "1.1.0 ESTABLE",
+          getVersion: "1.1.1 ESTABLE",
           getBetaVersion: "0"
         }
       };
@@ -669,9 +669,16 @@
       console.info("%cCon el Poder de %cCreadores Program %c©2025", "background-color: black; color: white;", "background-color: black; color: #0000FF;", "background-color: black; color: white;");
 
       //Polyfills y mas...
-      function isValidUUID(uuid){
-        return /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(uuid);
-      }
+      function getUUID(){
+		  if (window.crypto && typeof window.crypto.randomUUID === "function"){
+			  return window.crypto.randomUUID();
+		  }
+		  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+              const r = Math.random() * 16 | 0;
+              const v = c === 'x' ? r : (r & 0x3 | 0x8);
+              return v.toString(16);
+          });
+	  }
       if(localStorage == null){
         Object.defineProperty(window, "localStorage", { get: function(){ return sessionStorage; } });
       }
@@ -955,7 +962,7 @@
         }
         if(!localStorage.getItem("updateAd") || localStorage.getItem("updateAd") != properties.getGame.getVersion){  
           localStorage.setItem("updateAd", properties.getGame.getVersion);
-          await swal({ title: "Actualización CreadorCraft", text: "Novedades de CreadorCraft V." + properties.getGame.getVersion + "\n•Se añadio La API AudioGame de CreadoresProgram!(ver mas en github de AudioGame)\n•Se Cambio La API en algunos sonidos por defecto a AudioGame\n•Se arreglaron errores!\nDisfruta la Actualización!", icon: "info" });
+          await swal({ title: "Actualización CreadorCraft", text: "Novedades de CreadorCraft V." + properties.getGame.getVersion + "\n•Se añadio La API AudioGame de CreadoresProgram!(ver mas en github de AudioGame)\n•Se Cambio La API en algunos sonidos por defecto a AudioGame\n•Ahora se guardan automaticamente los juegos antiguos sin uuid asignandole una\n•Se arreglaron errores!\nDisfruta la Actualización!", icon: "info" });
         }
         if (!localStorage.getItem('cookiesAccepted')) {
           $("#cookie-banner").fadeIn();
@@ -1018,8 +1025,10 @@
       //Custom Games API
       async function saveCreadorCraftGame(zipCust){
         let manifest = await zipCust.file("manifest.json").async("string");
-        if(manifest.uuid == null || !isValidUUID(manifest.uuid)){
-          return;
+        if(manifest.uuid == null){
+	      //actualizar a nueva API
+          manifest.uuid = getUUID();
+		  zip.file("manifest.json", JSON.stringify(manifest));
         }
         if(GamesList.indexOf(manifest.uuid) != -1){
           if(GamesInfo[manifest.uuid].version != null && GamesInfo[manifest.uuid].version == manifest.version){
@@ -1190,7 +1199,7 @@
               break;
             case "onCommonJS":
               if(maniCustom[option]){
-                ScriptsDef += "<script src='https://cdn.jsdelivr.net/gh/Creadores-Program/CreadorCraft-Arcade@main/Games/CommonJSNative.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script>";
+                ScriptsDef += "<script src='https://cdn.jsdelivr.net/gh/Creadores-Program/CreadorCraft-Arcade@v1.1.1-ESTABLE/Games/CommonJSNative.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script>";
                 if('mainJSmodule' in maniCustom){
                   ScriptsDef += "<script src='https://cdn.jsdelivr.net/gh/Creadores-Program/CreadorCraft-Arcade@main/Games/CommonJSModule.js' type='module' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script>";
                   if('mainTS' in maniCustom){
@@ -1201,13 +1210,13 @@
                   ScriptsDef += "<script src='https://cdn.jsdelivr.net/gh/Creadores-Program/CreadorCraft-Arcade@main/Games/CommonTS.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script>";
                 }
                 if('mainEsJS' in maniCustom){
-                  ScriptsDef += "<script src='https://cdn.jsdelivr.net/gh/Creadores-Program/CreadorCraft-Arcade@main/Games/CommonEsJS.js' crossorigin='anonymous' referrerpolicy='no-referrer' type='module'><"+"/script>";
+                  ScriptsDef += "<script src='https://cdn.jsdelivr.net/gh/Creadores-Program/CreadorCraft-Arcade@v1.1.1-ESTABLE/Games/CommonEsJS.js' crossorigin='anonymous' referrerpolicy='no-referrer' type='module'><"+"/script>";
                 }
                 if('mainEsJSmodulo' in maniCustom){
                   ScriptsDef += "<script src='https://cdn.jsdelivr.net/gh/Creadores-Program/CreadorCraft-Arcade@main/Games/CommonEsJSmodule.js' type='module' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script>";
                 }
                 if('javaLibs' in maniCustom){
-                  ScriptsDef += "<script src='https://cdn.jsdelivr.net/gh/Creadores-Program/CreadorCraft-Arcade@main/Games/CommonJava.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script>";
+                  ScriptsDef += "<script src='https://cdn.jsdelivr.net/gh/Creadores-Program/CreadorCraft-Arcade@v1.1.1-ESTABLE/Games/CommonJava.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script>";
                 }
                 if('mainEJS' in maniCustom){
                   ScriptsDef += "<script src='https://cdn.jsdelivr.net/gh/Creadores-Program/CreadorCraft-Arcade@main/Games/CommonEJS.js' crossorigin='anonymous' referrerpolicy='no-referrer'><"+"/script>";
