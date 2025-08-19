@@ -1024,11 +1024,11 @@
 
       //Custom Games API
       async function saveCreadorCraftGame(zipCust){
-        let manifest = await zipCust.file("manifest.json").async("string");
+        let manifest = JSON.parse(await zipCust.file("manifest.json").async("string"));
         if(manifest.uuid == null){
 	      //actualizar a nueva API
           manifest.uuid = getUUID();
-		  zip.file("manifest.json", JSON.stringify(manifest));
+		  zipCust.file("manifest.json", JSON.stringify(manifest));
         }
         if(GamesList.indexOf(manifest.uuid) != -1){
           if(GamesInfo[manifest.uuid].version != null && GamesInfo[manifest.uuid].version == manifest.version){
@@ -1039,8 +1039,9 @@
           }
         }
         let GameData = {};
-        await zipCust.forEach(async function(relativePath, file){
-          if (relativePath.endsWith("/")) return;
+		for(let relativePath in zipCust.files){
+		  let file = zipCust.files[relativePath];
+          if (relativePath.endsWith("/")) continue;
           let data;
           let type;
 			    try{
@@ -1054,7 +1055,7 @@
             type: type,
             data: data
           };
-        });
+        };
         GamesList.push(manifest.uuid);
         GamesInfo[manifest.uuid] = manifest;
         localStorage.setItem("GamesList", JSON.stringify(GamesList));
