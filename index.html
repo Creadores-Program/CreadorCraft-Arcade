@@ -198,6 +198,7 @@
           margin-top: 0.5vw;
           text-shadow: 0 1px 4px #b0c4de44;
           word-break: break-word;
+		  width: 100%;
         }
         button {
           background-color: lightblue;
@@ -1105,7 +1106,7 @@
           let game = GamesInfo[gameid];
           $carousel.append(`
             <div class="gameCard" data-uuid="${game.uuid}">
-              <button class="deleteGameBtn" data-index="${gameid}" style="position:absolute;top:0.7vw;right:0.7vw;background:url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheIT1hrseXl11hIERNWTMgRnK9UdPnp09XQRaHLwqK5JNQdA5F_E3kHuZu8z68s6piIimtiGZ96QFE2iqWvVdB6JzPNPLQmz9N5pwNEHgHC5WPn-1FbdbiXnRZhHGp66Dra0HCv1xTldBwWQbdYnxWYr1sQLixPNV-zM0zsCkY56A60UvKq0JRJsHtKijY/s1600/delete_50dp_EA3323_FILL0_wght400_GRAD0_opsz48.png') 50% 50% no-repeat lightblue; background-size: contain; border:none;cursor:pointer;></button>
+              <button class="deleteGameBtn" data-index="${gameid}" style="position:absolute;top:0.7vw;right:0.7vw;background:url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheIT1hrseXl11hIERNWTMgRnK9UdPnp09XQRaHLwqK5JNQdA5F_E3kHuZu8z68s6piIimtiGZ96QFE2iqWvVdB6JzPNPLQmz9N5pwNEHgHC5WPn-1FbdbiXnRZhHGp66Dra0HCv1xTldBwWQbdYnxWYr1sQLixPNV-zM0zsCkY56A60UvKq0JRJsHtKijY/s500/delete_50dp_EA3323_FILL0_wght400_GRAD0_opsz48.png') 50% 50% no-repeat lightblue; background-size: contain; border:none;cursor:pointer;width:4vw;heigth:4vw;"></button><br/>
               <img src="${game.icon || ""}" alt="${game.name}" />
               <div class="gameName">${game.name}</div>
             </div>
@@ -1129,6 +1130,7 @@
           delete GamesInfo[uuidG];
           localStorage.setItem("GamesList", JSON.stringify(GamesList));
           localStorage.setItem("GamesInfo", JSON.stringify(GamesInfo));
+		  renderGamesCarousel();
         });
       }
       function setPorcentL(porcent){
