@@ -416,7 +416,7 @@
             <center>
               <div style="background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbFkezPAL1FJ2hC6pf7tp2NIWFfIEOwXO_jI0VtE1-0_jfAYbPVlMUCH0FNeZTJFd1xamXKQM-ZzUvAMNV_tSB_cA1CY5AlgpCETerYggOlRgn_YP1NBWuQ5bbvNCzvvwDYa5jPVMAOQLQwotCGDgkLPfp_aTFf4usyZX_126U1BaciK5GH67fLsZoDPLt/s1600/Select_Game_Mode_20250207_080805_0004.png') 50% 50% no-repeat #56A5EC; background-size: contain; width: 80%; height: 5vw; color: yellow;">Ajustes</div><br/>
               <button style="font-size: 5vw;" id="configProfileBtn" onclick="properties.soundClick.play(); this.style.background = '#7C9D8E'; configAlmBtn.style.background = 'lightblue'; configInfoBtn.style.background = 'lightblue'; $('#configAlmInterface').hide(); $('#configInfoInterface').hide(); $('#configProfileInterface').show();">Perfil</button><br/>
-              <button style="font-size: 5vw;" id="configAlmBtn" onclick="properties.soundClick.play(); this.style.background = '#7C9D8E'; configInfoBtn.style.background = 'lightblue'; configProfileBtn.style.background = 'lightblue'; $('#configInfoInterface').hide(); $('#configProfileInterface').hide(); onBetabtnConf.innerHTML = properties.BetaEnable; if(localStorage.size() == '0MB'){ if(localStorage.size('KB') == '0KB'){ storagUsedConf.innerHTML = localStorage.size('B'); }else{ storagUsedConf.innerHTML = localStorage.size('KB'); } }else{ storagUsedConf.innerHTML = localStorage.size(); } $('#configAlmInterface').show();">Almacenamiento</button><br/>
+              <button style="font-size: 5vw;" id="configAlmBtn" onclick="properties.soundClick.play(); this.style.background = '#7C9D8E'; configInfoBtn.style.background = 'lightblue'; configProfileBtn.style.background = 'lightblue'; $('#configInfoInterface').hide(); $('#configProfileInterface').hide(); onBetabtnConf.innerHTML = properties.BetaEnable; if(localStorage.size() == '0MB'){ if(localStorage.size('KB') == '0KB'){ storagUsedConf.innerHTML = localStorage.size('B'); }else{ storagUsedConf.innerHTML = localStorage.size('KB'); } }else{ storagUsedConf.innerHTML = localStorage.size(); } (async function(){ if((await localStorageCC.size()) == '0MB'){ if((await localStorageCC.size('KB')) == '0KB'){ storagUsedConf.innerHTML += '+' + await localStorageCC.size('B'); }else{ storagUsedConf.innerHTML += '+' + await localStorageCC.size('KB'); } }else{ storagUsedConf.innerHTML += '+' + await localStorageCC.size(); } $('#configAlmInterface').show(); })();">Almacenamiento</button><br/>
               <button style="font-size: 5vw;" id="configInfoBtn" onclick="properties.soundClick.play(); this.style.background = '#7C9D8E'; configAlmBtn.style.background = 'lightblue'; configProfileBtn.style.background = 'lightblue'; $('#configAlmInterface').hide(); $('#configProfileInterface').hide(); $('#configInfoInterface').show();">Info e Idioma</button><br/>
             </center>
           </div>
@@ -436,7 +436,7 @@
               <div style="background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXtOlejtmjwunodU1biievv4ELCwjdCb3Voo6sbjfEKO3MI74Oe4KbCtz_V3BiDCwY7qHzcW-Nt5VaWFEXPFtKlQdM5S2DbwNlAo-JkrYYKAqmAI1xfGSPFSiWJBp7oJLnUlyRlGoe2liwKE-IIzBcOrQCA-VjYOaxMUmzlOl4HWiRycQI3xCMIsyqUeAM/s1600/Select_Game_Mode_20250207_080805_0006.webp') 50% 50% no-repeat blueviolet; background-size: contain; width: 80%; height: 5vw; color: red; font-size: 5vw;">Almacenamiento</div><br/>
               Activar version Beta: <button id="onBetabtnConf" onclick="properties.soundClick.play(); properties.soundWarning.play(); (async function(){ if(properties.BetaEnable == 'true' && await customConfirm('Almacenamiento', 'SEGURO QUE QUIERES VOLVER AL MODO NORMAL? Puede que pierdas algunos datos!')){ swal('Almacenamiento', 'Actualizando...'); $('#Loader').fadeIn(); localStorage.setItem('BetaOn', 'false'); swal('Almacenamiento', 'Reiniciando...'); window.onbeforeunload = null; location.reload(); }else if(await customConfirm('Almacenamiento', 'SEGURO QUE QUIERES ACTIVAR EL MODO BETA? Se pueden perder datos, tener crasheos y puede que no funcione correctamente el Juego!')){ swal('Almacenamiento', 'Actualizando...'); $('#Loader').fadeIn(); localStorage.setItem('BetaOn', 'true'); swal('Almacenamiento', 'Reiniciando...'); window.onbeforeunload = null; location.reload(); } })();"></button><br/>
               Almacenamiento Usado: <div id="storagUsedConf"></div><br/>
-              <button style="color: red;" onclick="properties.soundClick.play(); properties.soundWarning.play(); (async function(){ if(await customConfirm('Almacenamiento', 'SEGURO QUE QUIERES ELIMINAR TODO? (NO SE PUEDE RECUPERAR)')){ properties.soundWarning.play(); if(await customConfirm('Almacenamiento', 'SEGURO QUE QUIERES ELIMINAR TODO? POR SEGUNDA VEZ (NO SE PUEDE RECUPERAR)')){ properties.soundClickStart.play(); swal('Almacenamiento', 'ELIMINANDO TODO...'); localStorage.clear(); window.location.reload(); } } })();">ELIMINAR DATOS</button>
+              <button style="color: red;" onclick="properties.soundClick.play(); properties.soundWarning.play(); (async function(){ if(await customConfirm('Almacenamiento', 'SEGURO QUE QUIERES ELIMINAR TODO? (NO SE PUEDE RECUPERAR)')){ properties.soundWarning.play(); if(await customConfirm('Almacenamiento', 'SEGURO QUE QUIERES ELIMINAR TODO? POR SEGUNDA VEZ (NO SE PUEDE RECUPERAR)')){ properties.soundClickStart.play(); swal('Almacenamiento', 'ELIMINANDO TODO...'); localStorage.clear(); await localStorageCC.clear(); window.location.reload(); } } })();">ELIMINAR DATOS</button>
             </center>
           </div>
           <div id="configInfoInterface" class="configInterface HiddenDef">
@@ -666,6 +666,148 @@
       var timeCCredit;
       let GamesList;
       let GamesInfo;
+      let storageDB;
+      class StorageCC{
+        constructor(){
+          if(!window.indexedDB){
+            return;
+          }
+          this.dbName = "CreadorCraftSuperDB";
+          this.db = null;
+          this.isReady = false;
+          this.readyPromise = this.initDB();
+        }
+        async initDB(){
+          return new Promise(function(resolve, reject){
+            let request = indexedDB.open(this.dbName, 1);
+            request.onerror = function(event){
+              reject(event.target.error);
+            };
+            request.onupgradeneeded = function(event){
+              let db = event.target.result;
+              db.createObjectStore("gameData", { keyPath: "key" });
+            };
+            request.onsuccess = function(event){
+              this.db = event.target.result;
+              this.isReady = true;
+              resolve();
+            }.bind(this);
+          }.bind(this));
+        }
+        async setItem(key, value){
+          if(!window.indexedDB){
+            localStorage.setItem(key, value);
+            return;
+          }
+          await this.readyPromise;
+          let transaction = this.db.transaction(["gameData"], "readwrite");
+          let store = transaction.objectStore("gameData");
+          return new Promise(function(resolve, reject){
+            let request = store.put({ key: key, value: value });
+            request.onsuccess = function(){
+              resolve();
+            };
+            request.onerror = function(event){
+              reject(event.target.error);
+            };
+          });
+        }
+        async getItem(key){
+          if(!window.indexedDB){
+            return localStorage.getItem(key);
+          }
+          if(localStorage.getItem(key)){
+            return localStorage.getItem(key);
+            this.setItem(key, localStorage.getItem(key));
+            localStorage.removeItem(key);
+          }
+          await this.readyPromise;
+          let transaction = this.db.transaction(["gameData"], "readonly");
+          let store = transaction.objectStore("gameData");
+          return new Promise(function(resolve, reject){
+            let request = store.get(key);
+            request.onsuccess = function(event){
+              if(event.target.result){
+                resolve(event.target.result.value);
+              }else{
+                resolve(null);
+              }
+            };
+            request.onerror = function(event){
+              reject(event.target.error);
+            };
+          });
+        }
+        async removeItem(key){
+          if(localStorage.getItem(key)){
+            localStorage.removeItem(key);
+          }
+          if(!window.indexedDB){
+            return;
+          }
+          await this.readyPromise;
+          let transaction = this.db.transaction(["gameData"], "readwrite");
+          let store = transaction.objectStore("gameData");
+          return new Promise(function(resolve, reject){
+            let request = store.delete(key);
+            request.onsuccess = function(){
+              resolve();
+            };
+            request.onerror = function(event){
+              reject(event.target.error);
+            };
+          });
+        }
+        async clear(){
+          if(!window.indexedDB){
+            return;
+          }
+          await this.readyPromise;
+          let transaction = this.db.transaction(["gameData"], "readwrite");
+          let store = transaction.objectStore("gameData");
+          return new Promise(function(resolve, reject){
+            let request = store.clear();
+            request.onsuccess = function(){
+              resolve();
+            };
+            request.onerror = function(event){
+              reject(event.target.error);
+            };
+          });
+        }
+        async size(units){
+          if(!window.indexedDB){
+            return localStorage.size(units);
+          }
+          await this.readyPromise;
+          units = units ? units.toUpperCase() : 'MB';
+          let transaction = this.db.transaction(["gameData"], "readonly");
+          let store = transaction.objectStore("gameData");
+          return new Promise(function(resolve, reject){
+            let size = 0;
+            let cursorRequest = store.openCursor();
+            cursorRequest.onsuccess = function(event){
+              let cursor = event.target.result;
+              if(cursor){
+                size += unescape(encodeURIComponent(JSON.stringify(cursor.value))).length;
+                cursor.continue();
+              }else{
+                switch (units){
+                  case 'B': resolve([size,'B'].join('')); break;
+                  case 'KB': resolve([+(size / 1024).toFixed(3),'KB'].join('')); break;
+                  case 'MB': resolve([+(size / 1024 / 1024).toFixed(3),'MB'].join('')); break;
+                  case 'GB': resolve([+(size / 1024 / 1024 / 1024).toFixed(3),'GB'].join('')); break;
+                  default: resolve([+(size / 1024 / 1024).toFixed(3),'MB'].join('')); break;
+                }
+              }
+            };
+            cursorRequest.onerror = function(event){
+              reject(event.target.error);
+            };
+          });
+        }
+      }
+      var localStorageCC = new StorageCC();
       Object.defineProperty(navigator, "getPWA", { get: function(){ return properties; } });
       console.info("%cCargando...", "background-color: black; color: white;");
       console.info("%cCon el Poder de %cCreadores Program %c©2025", "background-color: black; color: white;", "background-color: black; color: #0000FF;", "background-color: black; color: white;");
@@ -974,14 +1116,22 @@
           $("#Loader").fadeOut();
           return;
         }
-        if(!localStorage.getItem("GamesList")){
-          localStorage.setItem("GamesList", "[]");
+        if(!(await localStorageCC.getItem("GamesList"))){
+          await localStorageCC.setItem("GamesList", "[]");
         }
-        if(!localStorage.getItem("GamesInfo")){
-          localStorage.setItem("GamesInfo", "{}")
+        if(!(await localStorageCC.getItem("GamesInfo"))){
+          await localStorageCC.setItem("GamesInfo", "{}");
         }
-        GamesList = JSON.parse(localStorage.getItem('GamesList'));
-        GamesInfo = JSON.parse(localStorage.getItem("GamesInfo"));
+        if(localStorage.getItem("GamesList")){
+          await localStorageCC.setItem("GamesList", localStorage.getItem("GamesList"));
+          localStorage.removeItem("GamesList");
+        }
+        if(localStorage.getItem("GamesInfo")){
+          await localStorageCC.setItem("GamesInfo", localStorage.getItem("GamesInfo"));
+          localStorage.removeItem("GamesInfo");
+        }
+        GamesList = JSON.parse(await localStorageCC.getItem('GamesList'));
+        GamesInfo = JSON.parse(await localStorageCC.getItem("GamesInfo"));
         properties.playerID = localStorage.getItem('playerID');
         properties.playerName = localStorage.getItem("playerName");
         properties.discordAuth = localStorage.getItem("DiscordAuth");
@@ -1060,25 +1210,25 @@
         };
         GamesList.push(manifest.uuid);
         GamesInfo[manifest.uuid] = manifest;
-        localStorage.setItem("GamesList", JSON.stringify(GamesList));
-        localStorage.setItem("GamesInfo", JSON.stringify(GamesInfo));
-        localStorage.setItem("Games||//:"+manifest.uuid, JSON.stringify(GameData));
+        await localStorageCC.setItem("GamesList", JSON.stringify(GamesList));
+        await localStorageCC.setItem("GamesInfo", JSON.stringify(GamesInfo));
+        await localStorageCC.setItem("Games||//:"+manifest.uuid, JSON.stringify(GameData));
       }
       async function loadCreadorCraftGame100API(uuid){
         $('#Loader').fadeIn();
-        if(!localStorage.getItem("Games||//:"+uuid)){
+        if(!(await localStorageCC.getItem("Games||//:"+uuid))){
           console.error("Error al encontrar el Juego!");
           await swal("CreadorCraft", "Error al encontrar el Juego!", "error");
           if(GamesList.indexOf(uuid) != -1){
             GamesList.splice(GamesList.indexOf(uuid), 1);
             delete GamesInfo[uuid];
-            localStorage.setItem("GamesList", JSON.stringify(GamesList));
-            localStorage.setItem("GamesInfo", JSON.stringify(GamesInfo));
+            await localStorageCC.setItem("GamesList", JSON.stringify(GamesList));
+            await localStorageCC.setItem("GamesInfo", JSON.stringify(GamesInfo));
           }
           return;
         }
         let zipGame = new JSZip();
-        let dataGame = JSON.parse(localStorage.getItem("Games||//:"+uuid));
+        let dataGame = JSON.parse(await localStorageCC.getItem("Games||//:"+uuid));
         for(let path of Object.keys(dataGame)){
           let data = dataGame[path];
           if(data.type == "string"){
@@ -1129,8 +1279,8 @@
           let uuidG = $(this).data("index");
           GamesList.splice(GamesList.indexOf(uuidG), 1);
           delete GamesInfo[uuidG];
-          localStorage.setItem("GamesList", JSON.stringify(GamesList));
-          localStorage.setItem("GamesInfo", JSON.stringify(GamesInfo));
+          localStorageCC.setItem("GamesList", JSON.stringify(GamesList));
+          localStorageCC.setItem("GamesInfo", JSON.stringify(GamesInfo));
 		  renderGamesCarousel();
         });
       }
@@ -1450,14 +1600,14 @@
           }
           static getStorage(){
             return {
-              set: function(key, DataI){
-                return localStorage.setItem(data.manifest.name+"|"+key, DataI);
+              set: async function(key, DataI){
+                await localStorageCC.setItem(data.manifest.name+"|"+key, DataI);
               },
-              get: function(key){
-                return localStorage.getItem(data.manifest.name+"|"+key);
+              get: async function(key){
+                return await localStorageCC.getItem(data.manifest.name+"|"+key);
               },
               delete: function(key){
-                return localStorage.removeItem(data.manifest.name+"|"+key);
+                return localStorageCC.removeItem(data.manifest.name+"|"+key);
               }
             };
           }
@@ -1472,7 +1622,7 @@
           }
         });
         setPorcentL("0.60");
-        codeCustomGame += "<script>var GameProps = window.parent.APICC; localStorage = sessionStorage; try{ window.patent = window; window.top = window; }catch(error){}<"+"/script><style> *{ cursor: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4i04P7TtdlCBmLeKY6UFr17Qq5etyCdKZ5Ww41q2pjA8_EN9jZJ5SzMFASYJw7PuVPvAWVX9PMiXeweOazMcC5DfkzI876MvXTNxrO1b9ex5hLp9ToOk71W6-zk-teNI43rdyB8DfWoD4FQ2qh2fSN22YZZB9N9AR11s-SxOyQ6KzZ8jwes4CbTi5HmbC/s32/1684116434512.png'), auto; } </style>";
+        codeCustomGame += "<script>var GameProps = window.parent.APICC; if(StorageCC){ StorageCC = null; } if(window.indexedDB){ window.indexedDB = null; } localStorage = sessionStorage; try{ window.patent = window; window.top = window; }catch(error){}<"+"/script><style> *{ cursor: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4i04P7TtdlCBmLeKY6UFr17Qq5etyCdKZ5Ww41q2pjA8_EN9jZJ5SzMFASYJw7PuVPvAWVX9PMiXeweOazMcC5DfkzI876MvXTNxrO1b9ex5hLp9ToOk71W6-zk-teNI43rdyB8DfWoD4FQ2qh2fSN22YZZB9N9AR11s-SxOyQ6KzZ8jwes4CbTi5HmbC/s32/1684116434512.png'), auto; } </style>";
         setPorcentL("0.80");
         codeCustomGame += "<style>"+data.mains.mainCSS+"</style>";
         codeCustomGame += data.mains.mainHtml;
