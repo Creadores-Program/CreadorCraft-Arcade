@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="es" dir='<$BlogLanguageDirection$>' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr' prefix='og: <$BlogURL$>'>
+  <head>
+    <!--Copyright (c) 2022-2025 Creadores Program ©2025-->
+    <!--All rights reserved.-->
+    <!--License GNU General Public License v3.0: https://raw.githubusercontent.com/Creadores-Program/CreadorCraft-Arcade/main/LICENSE.md-->
+    
+    <!--Meta Tags-->
+    <!--Blogger-->
+    <$BlogMetaData$>
+    <!--End Blogger-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="google" content="notranslate" />
+    <meta content='43200' http-equiv='expires'/>
+    <meta content='Creadores Program' name='author'/>
+    <meta content='Creadores Program' name='copyright'/>
+    <meta content='es' name='language'/>
+    <meta content='follow' name='robots'/>
+    <meta content='index' name='robots'/>
+    <meta name="revisit-after" content="5 days"/>
+    <meta content='<$BlogPageTitle$>' property='og:title'/>
+    <meta content='<$BlogPageTitle$>' property='og:sitename'/>
+    <meta name="google-site-verification" content="UXDgNrpQ7vKM5TSTVe0PUh76JwbxRAJiQqF-Ico7aVc" />
+    <meta content='creadores, games, servidores, minigames, engine, servers, foro, servidor, server, trollhunters501, plugins, program, creadorcraft, arcade, pwa, esjs, creaprobot, python, lua, perl, java, js, css, webassembly, eshtml, html, scss, ejs, php' name='keywords'/>
+    <meta content='#00FFFF' name='theme-color'/>
+    <meta content='#00FFFF' name='msapplication-navbutton-color'/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta content='yes' name='apple-mobile-web-app-capable'/>
+    <meta content='black-translucent' name='apple-mobile-web-app-status-bar-style'/>
+    <meta content='<$BlogPageTitle$>' name="apple-mobile-web-app-title"/>
+    <meta content='<$BlogDescription$>' name='description'/>
+    <meta content='game' property='og:type'/>
+    <meta content='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdnV8SHgQ08RHXLJbzGNY0n4guChoLUPRk1T6dqgtzGvs4UScDXnfMP6jn0Tkdyd80zq3cF5kB1i_gpoNuXxbyU1GfNaIIerbzSe7yRediiayx23uupHmUDZ4Tnt6JBfB_hsSbwsd9A1AxMAdEayOf_Zn0PEBDsVNC87vAwCNvhIRXAET-CKlem8UPhVXj/s800/creadorcraft-logo.1.png' property='og:image'/>
+    <meta name="msapplication-TileImage" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdnV8SHgQ08RHXLJbzGNY0n4guChoLUPRk1T6dqgtzGvs4UScDXnfMP6jn0Tkdyd80zq3cF5kB1i_gpoNuXxbyU1GfNaIIerbzSe7yRediiayx23uupHmUDZ4Tnt6JBfB_hsSbwsd9A1AxMAdEayOf_Zn0PEBDsVNC87vAwCNvhIRXAET-CKlem8UPhVXj/s800/creadorcraft-logo.1.png"/>
+    <meta name="msapplication-TileColor" content="#00FFFF"/>
+    <meta name="twitter:card" content='summary_large_image'/>
+    <meta content='<$BlogDescription$>' property='og:description'/>
+    <meta name="ad.orientation" content="landscape"/>
+    <meta name="ad.size" content="width=480,height=320"/>
+    <link href="<$BlogURL$>" rel='canonical' crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="manifest" href="https://cdn.jsdelivr.net/gh/Creadores-Program/CreadorCraft-Arcade/manifest.webmanifest" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="shortcut icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdnV8SHgQ08RHXLJbzGNY0n4guChoLUPRk1T6dqgtzGvs4UScDXnfMP6jn0Tkdyd80zq3cF5kB1i_gpoNuXxbyU1GfNaIIerbzSe7yRediiayx23uupHmUDZ4Tnt6JBfB_hsSbwsd9A1AxMAdEayOf_Zn0PEBDsVNC87vAwCNvhIRXAET-CKlem8UPhVXj/s800/creadorcraft-logo.1.png" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="apple-touch-icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdnV8SHgQ08RHXLJbzGNY0n4guChoLUPRk1T6dqgtzGvs4UScDXnfMP6jn0Tkdyd80zq3cF5kB1i_gpoNuXxbyU1GfNaIIerbzSe7yRediiayx23uupHmUDZ4Tnt6JBfB_hsSbwsd9A1AxMAdEayOf_Zn0PEBDsVNC87vAwCNvhIRXAET-CKlem8UPhVXj/s800/creadorcraft-logo.1.png" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="mask-icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdnV8SHgQ08RHXLJbzGNY0n4guChoLUPRk1T6dqgtzGvs4UScDXnfMP6jn0Tkdyd80zq3cF5kB1i_gpoNuXxbyU1GfNaIIerbzSe7yRediiayx23uupHmUDZ4Tnt6JBfB_hsSbwsd9A1AxMAdEayOf_Zn0PEBDsVNC87vAwCNvhIRXAET-CKlem8UPhVXj/s800/creadorcraft-logo.1.png" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="https://creadorcraftcp.blogspot.com/favicon.ico" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="icon" type="image/x-icon" href="https://creadorcraftcp.blogspot.com/favicon.ico" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="apple-touch-startup-image" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhURMn_NFfDMW-6_fm-FKVBQ0tCPenYCGWmxE2PJ2MGoPXef2IVP78L4zh6hB3Z8bhceOVnLqBUuvJdxK29EGQmvNOUp4R19jCA8eKJ0etOVP5qkBCh06PQyN0dPPkWvpXAWeqBDjK1KczeFyWePDr-eNC1cw3Bnw-PdutJnzMjSvL8U_L5OxB1rNwykrfx/s2592/png_20230217_225412_0000.png" media="orientation: portrait" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="apple-touch-startup-image" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5lr7kZ16whb-BpZyD5HkCjIdf9_0Le19BCYzoYuBdX3nTXxl6LEIp_9Sl1upq1CgjJ8T_FMHca7VEYWKaT_PghFlnli1iu5WBrg6-5pYsNgGmlyO9SG4daTk7JeLzthZXN5sDeOvSQCa86rINsGTteJBXMeysnypmyz0bNBuQn3Qe2FKpfQO2BiGEzF66/s1600/20230207_215109.jpg" media="orientation: landscape" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title><$BlogPageTitle$></title>
+    <!--End of Metatags of Creadores Program-->
+
+    <!--Extra Game addons-->
+    <script src="https://cdn.jsdelivr.net/npm/css-polyfills/dist/css-polyfills.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js/glider.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.27.0/babel.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.polyfill.io/v3/polyfill.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://resources.blogblog.com/blogblog/data/res/3060376906-indie_compiled.js" async="true"></script>
+    <script async="true" src="https://www.googletagmanager.com/gtag/js?id=G-B6NCE6K8MK" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script async src="https://cdn.ampproject.org/v0.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-migrate@latest/dist/jquery-migrate.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-color@latest/dist/jquery.color.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script async='async' src='https://unpkg.com/imagesloaded/imagesloaded.pkgd.min.js' crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script async='async' src='https://unpkg.com/masonry-layout/dist/masonry.pkgd.min.js' crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js/glider.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash/lodash.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script stc="https://cdnjs.cloudflare.com/ajax/libs/material-ui/5.0.0-beta.5/index.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bowser@2.11.0/es5.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Creadores-Program/AudioGame.JS@1.0.0-beta/src/org/CreadoresProgram/AudioGameJS/AudioGame.js"></script>
+    <script>
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'es'}, 'google_translate_element');
+      }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!--End of Extra Game addons.-->
+    <!--CSS Start-->
+    <style>
+        html, body{
+            margin: 0;
+            background-color: black;
+            left: 0px !important;
+            top: 0px !important;
+            padding: 20px 10px;
+        }
+        .skiptranslate iframe{
+          display: none !important;
+        }
+        *{
+          font-family: 'Comic Neue', cursive;
+          cursor: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4i04P7TtdlCBmLeKY6UFr17Qq5etyCdKZ5Ww41q2pjA8_EN9jZJ5SzMFASYJw7PuVPvAWVX9PMiXeweOazMcC5DfkzI876MvXTNxrO1b9ex5hLp9ToOk71W6-zk-teNI43rdyB8DfWoD4FQ2qh2fSN22YZZB9N9AR11s-SxOyQ6KzZ8jwes4CbTi5HmbC/s32/1684116434512.png"), auto;
+        }
+        #notify-movil-horizontal { display: none; }
+        @media only screen and (orientation:portrait) {
+          #Game{
+            width: 0px;
+            height: 0px;
+            display: none;
+            visibility: hidden;
+          }
+          #notify-movil-horizontal { display:block; }
+        }
+        @media only screen and (orientation:landscape) {
+          #notify-movil-horizontal { display:none; }
+          #Game{
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+          }
+        }
+        a:link {
+          color:#ADD8E6;
+        }
+        a:visited {
+          color: #008000;
+        }
+        a:hover {
+          color:#c63;
+        }
+        a img {
+         border-width:0;
+        }
+        .HiddenDef{
+            display: none;
+        }
+        .InterfazCC{
+            z-index: 10;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        #removeBugHome{
+          z-index: 9;
+          background-color: #000000;
+          opacity: 1;
+        }
+        #gamesCarousel {
+          scrollbar-width: thin;
+          scrollbar-color: #56A5EC #e3eaf3;
+        }
+        #gamesCarousel::-webkit-scrollbar {
+          height: 0.7vw;
+          background: #e3eaf3;
+        }
+        #gamesCarousel::-webkit-scrollbar-thumb {
+          background: #56A5EC;
+          border-radius: 0.5vw;
+        }
+        .gameCard {
+		  position: relative;
+          background: #f8fbff;
+          border: 1.5px solid #e3eaf3;
+          border-radius: 1vw;
+          box-shadow: 0 2px 12px rgba(86,165,236,0.07);
+          width: 18vw;
+          min-width: 18vw;
+          height: 24vw;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          transition: transform 0.15s, box-shadow 0.15s;
+          margin: 0 1vw;
+        }
+        .gameCard:hover {
+          transform: scale(1.06);
+          box-shadow: 0 4px 24px rgba(86,165,236,0.13);
+          border-color: #56A5EC;
+        }
+        .gameCard img {
+          width: 10vw;
+          height: 10vw;
+          object-fit: cover;
+          border-radius: 0.7vw;
+          margin-bottom: 1vw;
+          box-shadow: 0 2px 8px rgba(86,165,236,0.08);
+          background: #e3eaf3;
+        }
+        .gameCard .gameName {
+          font-size: 2.5vw;
+          color: #333;
+          font-weight: 600;
+          text-align: center;
+          margin-top: 0.5vw;
+          text-shadow: 0 1px 4px #b0c4de44;
+          word-break: break-word;
+		  width: 100%;
+        }
+        button {
+          background-color: lightblue;
+          border-radius: 5px;
+          border: none;
+          border-radius: 0.7vw;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+          transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+          padding: 0.7vw 2vw;
+          font-family: inherit;
+          outline: none;
+        }
+        button:active{
+          transform: scale(0.97);
+          box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+        }
+        button:focus {
+          outline: 2px solid #56A5EC;
+        }
+        input {
+          background-color: lightblue;
+        }
+        input[type="text"], input[type="password"], input[type="email"] {
+          border: 1.5px solid #b0c4de;
+          border-radius: 0.5vw;
+          padding: 0.7vw 1vw;
+          font-size: 2.4vw;
+          background: #f8fbff;
+          transition: border 0.2s;
+        }
+        input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+          border: 1.5px solid #56A5EC;
+          background: #fff;
+        }
+        ::-webkit-scrollbar {
+          width: 0.7vw;
+          background: #e3eaf3;
+        }
+        ::-webkit-scrollbar-thumb {
+          background: #b0c4de;
+          border-radius: 0.5vw;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+          background: #56A5EC;
+        }
+        .cookie-banner p {
+            margin: 0;
+            flex: 1;
+        }
+        .cookie-banner a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+        .cookie-banner a:hover {
+            text-decoration: underline;
+        }
+        .cookie-banner button {
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .configInterface {
+          top: 0px;
+          height: 100%;
+          width: 60%;
+          position: fixed;
+          overflow-y: scroll;
+          scroll-behavior: initial;
+          right: 0%;
+          background-color: #50C878;
+        }
+        .configInterface, .InterfazCC, #profileUserConfig {
+          box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+          border-radius: 1vw;
+          border: 1.5px solid #e3eaf3;
+          background-clip: padding-box;
+        }
+        div[style*="font-size: 5vw;"] {
+          letter-spacing: 0.05em;
+          text-shadow: 0 2px 8px rgba(86,165,236,0.08);
+          font-weight: 600;
+        }
+        #fotoPerfilConf, .InterfazCC img[alt="PerfilFoto"] {
+          border: 2.5px solid #56A5EC;
+          box-shadow: 0 2px 12px rgba(86,165,236,0.08);
+        }
+        a, a:visited {
+          color: #56A5EC;
+          text-decoration: none;
+          transition: color 0.2s;
+        }
+        a:hover {
+          color: #1d7ed6;
+          text-decoration: underline;
+        }
+        @keyframes customFlip {
+          0% {
+            transform: translate(-50%, -50%) perspective(400px) rotateY(0deg);
+          }
+          100% {
+            transform: translate(-50%, -50%) perspective(400px) rotateY(360deg);
+          }
+        }
+        @keyframes customLightSpeedInLeft{
+          0% {
+            transform: translate(-50%, -50%) translateX(-100%) skewX(30deg);
+            opacity: 0;
+          }
+          60% {
+            transform: translate(-50%, -50%) translateX(20px) skewX(0deg);
+            opacity: 1;
+          }
+          80% {
+            transform: translate(-50%, -50%) translateX(-5px) skewX(0deg);
+            opacity: 1;
+          }
+          100% {
+            transform: translate(-50%, -50%) translateX(0) skewX(0deg);
+            opacity: 1;
+          }
+        }
+    </style>
+  </head>
+  <body>
+    <h1 class="HiddenDef"><$BlogPageTitle$></h1>
+    <div id="Game" class="InterfazCC" style="background-color: #56A5EC;">
+        <div class="InterfazCC" id="removeBugHome"></div>
+        <noscript>
+            <h2 style="z-index: 99999999999999999999999999;color: white;">CreadorCraft Necesita usar JavaScript! Porfavor Danos Permiso para usarlo!</h2>
+        </noscript>
+        <div id="present" class="InterfazCC" style="z-index: 15; background-color: #0000FF; background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioi7pGV0NaMsTqBfnb-V0KIYxrXWwVdal0Zf7v9payiMpn68xgEDpocvkmOK7B6K7NCN51IQScY2Ij3wS3HR0AkOjzTMrWWOm57Y5ZiRySbfBk0qosCWXxSyz5pZJ_zsoMZxRj_cFRxk8sue8pq6MaUwNPxHEmGg8s10qOtQILpjYQj7484RQn3ek2Ko7u/s1600/20230207_215109.jpg') 50% 50% no-repeat #0000FF; background-size: contain;">
+            <div style="position: fixed; left: 50%; top: 80%; transform: translate(-50%, -50%); font-size: 11vw; font-weight: bold; color: #99cc66; animation: customFlip; animation-duration: 2s;">Presenta</div>
+        </div>
+        <div id="Loader" class="InterfazCC" style="background-color: black; background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj11n_xgdhrt6vYpzuqEBuUAGQLyHhY8pyj_Ft2p37yifMl6Kfx990369XAfusXzII9KDb7fFgSs2yLurJo23rpG2jEZkaiXbTCMUZBL4nSRb-jbN1oGJlmCZ4NapwHYVfIEuKVD3JtRg3CtmvwiuS62k84zC2m-p8ix9E-4jxqQ7A3rwvv7wiBFA0i5OOR/s1600/1676147467811.png') 50% 50% no-repeat black; background-size: contain; color: white; z-index: 14;">
+            <div id="loadernotloadbtncon" class="HiddenDef" style="color: white; font-size: 5vw; background-color: black;">No Carga el Juego? <button id="loadernotloadbtn">Intenta Parar la carga!</button> (Puede no Funcionar correctamente el juego)</div>
+            <div style="position: fixed; left: 50%; top: 80%; transform: translate(-50%, -50%); font-size: 11vw; font-weight: bold; color: white; animation: customLightSpeedInLeft; animation-duration: 2s;">Cargando...</div>
+            <progress id="loaderBar" style="position: fixed; left: 50%; top: 90%; transform: translate(-50%, -50%); width: 80%;"></progress>
+        </div>
+        <div id="startInterface" class="InterfazCC HiddenDef" style="background-color: #56A5EC;">
+          <div style="position: fixed; left: 2vw; top: 2vw;"><center>
+            <button style="background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLYpPBb3WvH-1jtxI5iORoYcUwisn1qxgBCeslcrJk8b3AmDgfSQ3LxJKhV6WCZFJCK2TZOFsPCwTzrUYG0shmaFJMlHZvdzscyHnUgaeZ4fopenF6bjogteVscDv4UQIFcD2nNHN_Rn9_Ar9tGxuDXtqQty25pOjQi3B3RrO9LS8mfFqEFg129s71EMNg/s1600/fullscreen_FILL1_wght500_GRAD0_opsz48.png') 50% 50% no-repeat; background-size: contain; width: 8vw; height: 8vw;" onclick="properties.soundClick.play(); let urls = ['https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLYpPBb3WvH-1jtxI5iORoYcUwisn1qxgBCeslcrJk8b3AmDgfSQ3LxJKhV6WCZFJCK2TZOFsPCwTzrUYG0shmaFJMlHZvdzscyHnUgaeZ4fopenF6bjogteVscDv4UQIFcD2nNHN_Rn9_Ar9tGxuDXtqQty25pOjQi3B3RrO9LS8mfFqEFg129s71EMNg/s1600/fullscreen_FILL1_wght500_GRAD0_opsz48.png', 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidxcLPvhUC5S0Kb4aws6oPfzXLudnPLC22SoUTWcBWogmieEEre5wuregm-y6nhyphenhyphenLOZW1np1uA7hu8t4YhLk3-FopzyCWQXDorr68ZBMOpT55489wyko5JyIecqDrDgwuFG6fP1zMARl7Kp9PxawCsr3qmvE4dzxmBg8FgA0mvWike7AXMLQRroT9ja42l/s1600/fullscreen_exit_FILL1_wght500_GRAD0_opsz48.png']; if(window.isFullScreen()){ exitFullScreen(); this.style.background = `url('`+ urls[0] + `') 50% 50% no-repeat`; this.style['background-size'] = 'contain'; }else{ enterFullScreen(); this.style.background = `url('`+ urls[1] + `') 50% 50% no-repeat`; this.style['background-size'] = 'contain'; };"></button><br/>
+            <button style="background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjicOGtzMIT45X4PM9ugOAjo5YNOGt-Gon7pa4E1jPm_uwmfCLjsBrIdcMtWp8ED2r2s4-fIiKpC80tKcfpH1Tz1pDw9x0aEfKSnKm-H-6CUI-N3Ar4dhPcGH8hdY6zKkSESZAZfB1Fv24EHULRiVbLyYF-4bvQwuWcfJ-ZeyfkDWVkdoKILFg7wirUuGGE/s1600/volume_up_FILL1_wght500_GRAD0_opsz48.png') 50% 50% no-repeat lightblue; background-size: contain; width: 8vw; height: 8vw;" onclick="properties.soundClick.play(); let urlsS = ['https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjicOGtzMIT45X4PM9ugOAjo5YNOGt-Gon7pa4E1jPm_uwmfCLjsBrIdcMtWp8ED2r2s4-fIiKpC80tKcfpH1Tz1pDw9x0aEfKSnKm-H-6CUI-N3Ar4dhPcGH8hdY6zKkSESZAZfB1Fv24EHULRiVbLyYF-4bvQwuWcfJ-ZeyfkDWVkdoKILFg7wirUuGGE/s1600/volume_up_FILL1_wght500_GRAD0_opsz48.png', 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6ij4yClB0K2QfXsPecrWcGTYzfSHUN6DgFuPbr-ovTcnhIUbIf5LxojO6nYr4nDQIzXm2Ejrpj4ul9JYVVkwxVW6bCy5GNRqkFiD6ET2kT1-gQcaW9d1oQqbcOQQNVGX833oRS8rwMoRW7H3prnNeYUzLkUa8CzNw8zeZQ34jJZWGdTOt7rcb8YMEW_cx/s1600/no_sound_FILL1_wght500_GRAD0_opsz48.png']; if(properties.soundMenu.paused){ properties.soundMenu.play(); this.style.background = `url('`+ urlsS[0] + `') 50% 50% no-repeat lightblue`; this.style['background-size'] = 'contain'; }else{ properties.soundMenu.pause(); this.style.background = `url('`+ urlsS[1] + `') 50% 50% no-repeat lightblue`; this.style['background-size'] = 'contain'; }"></button>
+          </center></div>
+          <div style="position: fixed; height: 50%; width: 70%; left: 50%; top: 50%; transform: translate(-50%, -50%); background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj11n_xgdhrt6vYpzuqEBuUAGQLyHhY8pyj_Ft2p37yifMl6Kfx990369XAfusXzII9KDb7fFgSs2yLurJo23rpG2jEZkaiXbTCMUZBL4nSRb-jbN1oGJlmCZ4NapwHYVfIEuKVD3JtRg3CtmvwiuS62k84zC2m-p8ix9E-4jxqQ7A3rwvv7wiBFA0i5OOR/s1600/1676147467811.png') 50% 50% no-repeat; background-size: contain;"></div>
+          <div style="position: fixed; left: 50%; top: 80%; transform: translate(-50%, -50%);">
+            <button onclick="properties.soundClick.play(); $('#backBtn').show(); $('#startInterface').hide(); $('#selectionInterface').show();" style="width: 19vw; height: 7.5vw; color: #00bcd4; text-shadow: 0.1vw 0.1vw 0.2vw black; font-size: 4vw; background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSVbm_u50-Dx1KrqL3AVpRagSPy5-x9JhMXnUuYvGNuRcEoW5U_SHjv_9ZMAmT3RTuiR02LVhc8Mb1vIpbPzBmQl03GwTiy3IX3XpHhk91HrfL0DMhnLbXyVnSR1c2ouhdTysxiEtiNEyLev8xVBhwLN6EjaVx_R_DMuS_4YPcIQ8R4LbEOVFS4_fSKVSA/s1600/StartBTN.png') 50% 50% no-repeat grey; background-size: contain;">Jugar</button>
+          </div>
+          <div style="position: fixed; bottom: 2vw; left: 2vw;">
+            <div id="SocialNet1">
+              <button style="background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaadVcpZOPUmkspxnJs3_95-CzG4g3UTrUsrE8hK5hO1v08UghVMTd6Er8i49E1H8P6gknLU9MxkGmN-nYqHgvbhajmy5AMCPJgcPc28wzTTqG4FoiZCw1Sr5bWyyFc7J4nF-LZPm2NP0hOeTlr5GCN0P_XhFST75A_73IAcyL4iWFXlv02n2L_h0FmISM/s1600/arrow_forward_ios_FILL1_wght500_GRAD0_opsz48.png') 50% 50% no-repeat lightblue; background-size: contain; width: 8vw; height: 8vw;" onclick="properties.soundClick.play(); $('#SocialNet1').hide(); $('#SocialNet2').show();"></button>
+              <a href="https://www.blogger.com/followers/follow/3423424965086947491" target="_blank" rel="noopener noreferrer"><button style="background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdKjhYvCh2_ebFhdsJAuSJJKwXJmlEj7gMhKFntsdT-qzRAcAVmC6PgqjETSJRjgFOlF-zxagDO150EEZpD5xWv_uE6ZJeBrIbZRZHlOpBGbudU-5bP3zhxWCwr_jKT9H_KAmzTklxT6AZSL2ildBFpzbdNhH7pBCL2lVEGyj9adiHJBKPqFpActv8Aw/s1080/20230510_002327_0000.png') 50% 50% no-repeat lightblue; background-size: contain;  width: 8vw; height: 8vw;" onclick="properties.soundClick.play();"></button></a>
+              <button style="background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuk6DMp0Hg1_jYoTAVrgMVbjm797nDRCiIEPUJsZhckjKWTsjn_-yx_5uK5gqU8yc5MkrHyDd95ZoBCPOSQwk0yKa3Ae73rSderDrXgHArrIVueF1s3t1PdC_NVlzLwPEZ0_gSTjEUeJLWQBiVoOKj6Njft8P6h1cqFdEDQTaJ7F4Orekmg0zWE3wCnVUb/s1600/share_FILL1_wght500_GRAD0_opsz48.png') 50% 50% no-repeat lightblue; background-size: contain; width: 8vw; height: 8vw;" onclick="properties.soundClick.play(); if(navigator.share){ navigator.share({ title: 'CreadorCraft', text: 'Ven y Juega Conmigo en CreadorCraft!', url: 'https://creadorcraftcp.blogspot.com/' }); }"></button>
+              <button style="background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgQN3AGSx_RdNosZ1Ox91cj0qvMbK_dU8kIGYXod62esq3sh0UnDmV4_yxpdZqgW23-Uks08g9UA2SzZmpm3avYWMGPxB0uKTFdchPl3pA8fEea_dJV2xZ6b0pdwW-rcDY8cuajTsSF54PbZnlslRL2lHqKGZilnGo4whyph2vEfTuTvmQvd9GN1Vx0TGX/s1600/settings_FILL1_wght500_GRAD0_opsz48.png') 50% 50% no-repeat lightblue; background-size: contain; width: 8vw; height: 8vw;" onclick="properties.soundClick.play(); $('#startInterface').hide(); $('#backBtn').show(); $('#configInterface').show();"></button>
+            </div>
+            <div id="SocialNet2" class="HiddenDef">
+              <button style="background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXi_0Zs5VIUxKJGuPgZ36BysHbL2pfuN1KTXa1mFdXsh_JSzHp60FMUDPV85K5KrxuuQTeEmB06rW-S1D2DfrFS0f8RtzJCEaqcFEKua3i8z7k94tbG0oj7Z6HYGL4SndC7voJGJweVheIXQcwWhYJr06i34xhcxbESyu_ZUGOU38n9vgI72rKO692z_dF/s1600/arrow_back_ios_FILL1_wght500_GRAD0_opsz48.png') 50% 50% no-repeat lightblue; background-size: contain; width: 8vw; height: 8vw;" onclick="properties.soundClick.play(); $('#SocialNet2').hide(); $('#SocialNet1').show();"></button>
+              <a href="https://discord.com/invite/FQfQQuaTMQ" target="_blank" rel="noopener noreferrer"><button style="background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7db5UlaeUIiVUCGptZWUx25BbOkpqnvd2jqk5Vkm_HKAtS60k6whB4dFKddFbp9KRezPHEmxxh8lqBXDkRmroEPWTB8urvhT0zVpwNIj_1IyuLGhq5WBLZYtiC5ajAyskLz_6pI5VSrBvHoTI9ujCEv8N6Hmgs0AKJjjaHmuF3IHVbhYbKDxYP5y9vQ/s1080/20230215_203829_0000.png') 50% 50% no-repeat lightblue; background-size: contain; width: 8vw; height: 8vw;" onclick="properties.soundClick.play();"></button></a>
+              <a href="https://www.guilded.gg/i/pPJjgen2" target="_blank" rel="noopener noreferrer"><button style="background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDSn3GWIkj0hcBnTO5zGKk6DHKRgnC8YMAtF7yId9dhlGfIsTYJlPs5W0ZHtP5tdu6I61iMDXgtP5U8wFuytr6G0KD_tmGXPGpNe0Gelh2KvgKPdTVhqEHe597fNf1a02cLnzUJk3fhWzXecbC8aoAgorg89uTOiwSH2Kdv2KcUfFAmn7jVnWO1KgCzCKs/s320/Back%20To%20Home_20250531_205019_0000.png') 50% 50% no-repeat lightblue; background-size: contain; width: 8vw; height: 8vw;" onclick="properties.soundClick.play();"></button></a>
+              <a href="https://youtube.com/c/Trollhunters501" target="_blank" rel="noopener noreferrer"><button style="background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAR_7vO8GQCarTeXlS1MOS4tjh7OkN1LXEYxIrRaknYlQWrdbL5ISqj4RrEeEsqPt8wzn5EF2P-w_D5aOyLCKXH0anZOu3d7se1n5R6mfxYvKwj3kUCNl7zSYEuFkX3s3BHYqVL_QER3VhTmHh2QumuBDBS60BrspH7NivItO5j1_xq80KPx8b7HZjlg/s1080/20230215_203829_0001.png') 50% 50% no-repeat lightblue; background-size: contain; width: 8vw; height: 8vw;" onclick="properties.soundClick.play();"></button></a>
+              <a href="https://facebook.com/profile.php?id=100089507007036" target="_blank" rel="noopener noreferrer"><button style="background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzxvt1Kl54J1Lx8jbMRP5v1xolI3Ef7AjVfVW5iETSm14udaJiI_adSUE-U2sVBJnoKf01CLDIOY-thFvbFE54eRe_YZnRM51grpgcPrD9nXAvmpllqRUg0ymcDVFSIPvacbp8VxjiTSMimuA1_snnOXiPqVofJ0MQOZkgaA9xccO9NuZmIQUaZH4NqQ/s1080/20230216_210246_0000.png') 50% 50% no-repeat lightblue; background-size: contain; width: 8vw; height: 8vw;"></button></a>
+            </div>
+          </div>
+          <div id="version" style="position: fixed; bottom: 2vw; right: 2vw; font-size: 3vw; padding: 1vw; white-space: nowrap;"></div>
+        </div>
+        <div id="selectionInterface" class="InterfazCC HiddenDef" style="background-color: #56A5EC;">
+          <center>
+            <div style="background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOOq5hnMRdbZJJWxjmJhqQD7i0_XoQs7-I0FKJ4zhVWruQ8Uj4Gr88qTB433cuI-GkTvHt71V9j1rfZ1zUA4Jk5juNbyKCkby0G0pGxk9_qgGMetrTpS-PyHugKfnsBtdlZyhcbfoFwjfAuNmVP9Kux6wGJEI78jLzEV5WFNU3VJMBalcdswFKUFn-TgYB/s1600/Select_Game_Mode_20250207_080805_0002.png') 50% 50% no-repeat blue; background-size: contain; width: 80%; height: 9vw; font-size: 9vw; color: palegoldenrod; text-shadow: 2px 2px 4px #000000;">Seleccionar <span style="color: blueviolet;">Juego</span></div><br/>
+            <button style="font-size: 5vw;" onclick="properties.soundClick.play(); renderGamesCarousel(); $('#selectionInterface').hide(); $('#listGames').fadeIn();">Lista de Juegos</button><br/>
+            <input type="file" id="UpCustGame" hidden accept=".zip"/>
+            <button style="font-size: 5vw;" onclick="properties.soundClick.play(); (async function(){ await swal('CreadorCraft', '⚠️⚠️Recuerda verificar el origen del juego, puedes verificar si no tiene virus usando VirusTotal!⚠️⚠️', 'info'); UpCustGame.click(); })();">Subir Juego</button><br/>
+            <a target="_blank" href="https://creadorcraft-maker.blogspot.com/"><button onclick="properties.soundClick.play();"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGJdVPkhP-lQbu9H4A1GguimVGEba9SVAOs-QC-7B9Ju9EcVi6yz23Kk9nc_Mn8eIC-q7aogeBJM08ofGID2oNgaWEhcf4tVGHDgH49A8q7gJv_DhIPbaJjwvgpLdbh8JvVlHW2_hbi6wVPIyQAR5VN09pIdD7C6VwBjR18AdQvqH2gy6_vqj-UF993bwo/s1600/20230923_012014_0000.png" alt="CCM" width="30vw"/> <span style="color: green; font-size: 5vw;">Abrir CreadorCraft Maker</span></button></a>
+          </center>
+          <button style="position: fixed; top: 50%; left: 2vw; transform: translateY(-50%);" onclick="properties.soundClick.play(); $('#selectionInterface').hide(); $('#globalChatInterface').show();"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmVYp8o65Ga6lRg0_o4BQp_WKjDBR7D80E3_F3LbYDQ4k2WMVPIbxVxnVYxDYeolcJST9OT8R2M5x9VLFlfM2P9UZ2GQwSwOSHYlyNKcIWTXshMQty5GEE0fDhtqiFwVOAi96HCZ-Mh3I4MUt2UQwWOA4f6258t5vqB4labBQQhRBkZhchZJEt616LMQ/s1080/20230223_210226_0001.png" width='45vw' height='45vw'/><br/>Chat Global</button>
+        </div>
+        <div id="listGames" class="InterfazCC HiddenDef" style="background-color: #56A5EC;">
+          <center>
+            <div style="background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOOq5hnMRdbZJJWxjmJhqQD7i0_XoQs7-I0FKJ4zhVWruQ8Uj4Gr88qTB433cuI-GkTvHt71V9j1rfZ1zUA4Jk5juNbyKCkby0G0pGxk9_qgGMetrTpS-PyHugKfnsBtdlZyhcbfoFwjfAuNmVP9Kux6wGJEI78jLzEV5WFNU3VJMBalcdswFKUFn-TgYB/s1600/Select_Game_Mode_20250207_080805_0002.png') 50% 50% no-repeat blue; background-size: contain; width: 80%; height: 9vw; font-size: 9vw; color: palegoldenrod; text-shadow: 2px 2px 4px #000000;">Lista de Juegos</div>
+          </center>
+          <div id="gamesCarousel" style="display: flex; align-items: center; justify-content: center; gap: 2vw; width: 100%; height: 30vw; overflow-x: auto; scroll-behavior: smooth; padding: 2vw 0;"></div>
+        </div>
+        <div id="customGameInterface" style="background-color: lightblue;" class="InterfazCC HiddenDef"><center>
+          <div style="width: 80%; height: 9vw; font-size: 5vw; background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOOq5hnMRdbZJJWxjmJhqQD7i0_XoQs7-I0FKJ4zhVWruQ8Uj4Gr88qTB433cuI-GkTvHt71V9j1rfZ1zUA4Jk5juNbyKCkby0G0pGxk9_qgGMetrTpS-PyHugKfnsBtdlZyhcbfoFwjfAuNmVP9Kux6wGJEI78jLzEV5WFNU3VJMBalcdswFKUFn-TgYB/s1600/Select_Game_Mode_20250207_080805_0002.png') 50% 50% no-repeat blue; background-size: contain; text-shadow: 2px 2px 4px #000000;" id="customGameLogo"></div><br/>
+          <p id="customGameDesc"></p>
+          <button id="customGamePlay" style="width: 19vw; height: 7.5vw; color: #00bcd4; text-shadow: 0.1vw 0.1vw 0.2vw black; font-size: 4vw; background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSVbm_u50-Dx1KrqL3AVpRagSPy5-x9JhMXnUuYvGNuRcEoW5U_SHjv_9ZMAmT3RTuiR02LVhc8Mb1vIpbPzBmQl03GwTiy3IX3XpHhk91HrfL0DMhnLbXyVnSR1c2ouhdTysxiEtiNEyLev8xVBhwLN6EjaVx_R_DMuS_4YPcIQ8R4LbEOVFS4_fSKVSA/s1600/StartBTN.png') 50% 50% no-repeat grey; background-size: contain;">Jugar</button>
+        </center></div>
+        <div class="InterfazCC HiddenDef" id="customGameplayInterf">
+          <div style="position: fixed; top: 2vw; left: 50%; transform: translateX(-50%); z-index: 11;" id="pauseChatInter"><center>
+            <button style="width: 5vw; height: 5vw; background: url('https://resources.blogblog.com/blogblog/data/rounders/icon_comment.gif') 50% 50% no-repeat lightblue; background-size: contain;" onclick="properties.soundClick.play(); $('#pauseChatInter').hide(); $('#chatInterf').fadeIn();"></button>
+            &nbsp;&nbsp;
+            <button style="width: 5vw; height: 5vw; background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6aM10-w7UA7tWyrwDxYKeQR9JUBnyiWW6Qy5QqpYZoVmqQBfmNmUTDa7tqRS1R_Gh7nUJYJ3VEqr-1mcg0RoHbVsyb9UlRSG_gmVQW_8G0d8Yg1d8fvZn9hm3COPu0GK7Od_sIvP-LASu_HjHSIi5heNEKpb5xY4-PEiibWlRYQqu1o66o8MSwmEejw/s1080/20230223_210226_0000.png')  50% 50% no-repeat lightblue; background-size: contain;" onclick="properties.soundClick.play(); $('#pauseChatInter').hide(); $('#PauseInterf').fadeIn(); try{ window.APICC.dispatchEvent(new CustomEvent('pauseEvent', { cancelable: false })); }catch(error){ customGameCode.contentWindow.console.error(error); }"></button>
+          </center></div>
+          <iframe class="InterfazCC" id="customGameCode" frameborder="0" style="bottom: 0%; right: 0%; z-index: 10;"></iframe>
+          <div id="PauseInterf" style="z-index: 11; background-color: #625D5D; opacity: 0.8;" class="InterfazCC HiddenDef">
+            <div style="position: fixed; top: 2vw; left: 50%; width: 80%; height: 6vw; font-size: 5vw; color: white; text-shadow: 2px 2px 4px #000000; transform: translateX(-50%); background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgzZPA_kBVjPF-H8UTERg9dyX58UTR3vzY5TgM49648CDf0-6jvmyO0JbvjTf-3_0QTylJbaTzBdt4dmtxOhrj9ImapzUpgATcco5DB67osOtixR-0wEYCY_ItrI265RGQIh-WP8hxBu7qDSR42GlxHIEAnaWNhx6i9G1PoAcn0Alm3pHUJa5noeR7I-8c/s1600/Select_Game_Mode_20250207_080805_0003.png') 50% 50% no-repeat greenyellow; background-size: contain;"><center>Pausa</center></div>
+            <div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+              <button onclick="properties.soundClick.play(); (async function(){ if(await customConfirm('CreadorCraft', 'Seguro que quieres Salir?')){ window.onbeforeunload = null; window.location.reload(); } })();" style="background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmDya5_U0cAWLEHE2U6wgABgBk9KTyjGjfUQoUWPfUQPPLLYEDmhIS5cbFlzCh5oPbu0KODDtyPPdgkRmQaHD-cvJdmJZlpLGx9i6I0rtE6yEV2NFOvz53mCxIO7mJSE2_eLjOF94dfBQ5TyE5_h40CK23QmbqIqcbbkvfdxl0LPlKugZcTF4VGdbvVg/s1080/20230316_225649_0000.png') 50% 50% no-repeat; background-size: contain; width: 15vw; height: 15vw;"></button>
+              <button onclick="properties.soundClick.play(); $('#PauseInterf').fadeOut(); $('#pauseChatInter').show();" style="background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilacx1417VCkvjU2KqPzP7WLG8mjZvHaRdGQPJ2tYB1xZXz--46frqneXX_PhsecCbSiNmcmx_tW4YW4VVkAvKQdncfxs6LMR2TjZobZ4ihQocAsE0RM-JhCVmIbo-7mKyxPj8fZ3ODvnY41fjI_L-NqJ5RlAllV8QBNy4D47_xEnl68AvtlAMjQ-0ig/s1080/20230316_230036_0000.png') 50% 50% no-repeat; background-size: contain; width: 15vw; height: 15vw;" id="resumeGP"></button>
+            </div>
+          </div>
+          <div id="chatInterf" class="InterfazCC HiddenDef" style="z-index: 11; background-color: Lightblue; opacity: 0.9; flex-direction: column; justify-content: space-between; padding: 10px; box-sizing: border-box;">
+            <button onclick="properties.soundClick.play(); $('#chatInterf').fadeOut(); $('#pauseChatInter').show();" style="align-self: flex-end; padding: 10px 20px; border: none;">Salir</button>
+            <textarea id="ChatContainMsg" style="font-size: 4vw; flex: 1; width: 100%; height: 80%; resize: none; padding: 10px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 5px; overflow-y: auto; background-color: #fff;" onmousedown="return false;" readonly></textarea>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <input type="text" id="chatInputC" placeholder="Hola a Todos!" style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-right: 10px;"/>
+              <button id="sendMSGChat" style="padding: 10px 20px; border: none;">Enviar</button>
+            </div>
+          </div>
+        </div>
+        <div id="configInterface" class="InterfazCC HiddenDef" style="background-color: #50C878;">
+          <div style="top: 0px; height: 100%; width: 40%; position: fixed; left: 0%; background-color: #AAF0D1; font-size: 5vw;">
+            <center>
+              <div style="background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbFkezPAL1FJ2hC6pf7tp2NIWFfIEOwXO_jI0VtE1-0_jfAYbPVlMUCH0FNeZTJFd1xamXKQM-ZzUvAMNV_tSB_cA1CY5AlgpCETerYggOlRgn_YP1NBWuQ5bbvNCzvvwDYa5jPVMAOQLQwotCGDgkLPfp_aTFf4usyZX_126U1BaciK5GH67fLsZoDPLt/s1600/Select_Game_Mode_20250207_080805_0004.png') 50% 50% no-repeat #56A5EC; background-size: contain; width: 80%; height: 5vw; color: yellow;">Ajustes</div><br/>
+              <button style="font-size: 5vw;" id="configProfileBtn" onclick="properties.soundClick.play(); this.style.background = '#7C9D8E'; configAlmBtn.style.background = 'lightblue'; configInfoBtn.style.background = 'lightblue'; $('#configAlmInterface').hide(); $('#configInfoInterface').hide(); $('#configProfileInterface').show();">Perfil</button><br/>
+              <button style="font-size: 5vw;" id="configAlmBtn" onclick="properties.soundClick.play(); this.style.background = '#7C9D8E'; configInfoBtn.style.background = 'lightblue'; configProfileBtn.style.background = 'lightblue'; $('#configInfoInterface').hide(); $('#configProfileInterface').hide(); onBetabtnConf.innerHTML = properties.BetaEnable; if(localStorage.size() == '0MB'){ if(localStorage.size('KB') == '0KB'){ storagUsedConf.innerHTML = localStorage.size('B'); }else{ storagUsedConf.innerHTML = localStorage.size('KB'); } }else{ storagUsedConf.innerHTML = localStorage.size(); } (async function(){ if((await localStorageCC.size()) == '0MB'){ if((await localStorageCC.size('KB')) == '0KB'){ storagUsedConf.innerHTML += '+' + await localStorageCC.size('B'); }else{ storagUsedConf.innerHTML += '+' + await localStorageCC.size('KB'); } }else{ storagUsedConf.innerHTML += '+' + await localStorageCC.size(); } $('#configAlmInterface').show(); })();">Almacenamiento</button><br/>
+              <button style="font-size: 5vw;" id="configInfoBtn" onclick="properties.soundClick.play(); this.style.background = '#7C9D8E'; configAlmBtn.style.background = 'lightblue'; configProfileBtn.style.background = 'lightblue'; $('#configAlmInterface').hide(); $('#configProfileInterface').hide(); $('#configInfoInterface').show();">Info e Idioma</button><br/>
+            </center>
+          </div>
+          <div id="configProfileInterface" class="configInterface HiddenDef">
+            <center>
+              <div style="background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirlJN44LhM3Av5yKPey0Obz5oLSOUx3dPdu6jAKxx4QF__NBXb_2dDJariYKfKAoF-zqSBB1DOLXxx53YfyIKIoD1FZzivhR-bXfUO-bWUaBPjyAvS3MjzdGiPzq7cUE00zCoR81KcoMibneuILkjXOvZaApnZG_eWp6ikXNdyriexJdt8o10faCe4XToF/s1600/Select_Game_Mode_20250207_080805_0005.webp') 50% 50% no-repeat #56A5EC; background-size: contain; width: 80%; height: 5vw; color: lightskyblue; font-size: 5vw;">Perfil</div>
+              <div id="profileUserConfig" style="background-color: lightblue; text-align: center; padding: 2vw; border-radius: 1vw; box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);">
+                <img alt="PerfilFoto" id="fotoPerfilConf" style="width: 15vw; height: 15vw; border-radius: 50%; object-fit: cover; margin-bottom: 1.5vw;"/>
+                <h2 id="PerfilNameConf" style="font-size: 2.4vw; color: #333;"></h2><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkevaDWyAr3r8WJIFCKvRhqVQwN5jZDoIqKF_thcT4I4BPHTQhFd-il2L_seHZ8yh70HrdyipJ5pmDn2OyzVjBBbOtoiD6Xa0WmEVGxh_GghUVUgZEtwFxMThB63xW5HfXijjkEjfwZoyMrK-bWx17ew7X4PawcmLSuELMKR0xBS38NbOTjHeDbhvfNEU1/s1600/verified_user_FILL1_wght400_GRAD0_opsz48.png" class="HiddenDef" alt="Verificado" width="18vw" id="IsVerifyconf">
+              </div><br/>
+              <p id="profileConfId"></p>
+            </center>
+          </div>
+          <div id="configAlmInterface" class="configInterface HiddenDef">
+            <center>
+              <div style="background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXtOlejtmjwunodU1biievv4ELCwjdCb3Voo6sbjfEKO3MI74Oe4KbCtz_V3BiDCwY7qHzcW-Nt5VaWFEXPFtKlQdM5S2DbwNlAo-JkrYYKAqmAI1xfGSPFSiWJBp7oJLnUlyRlGoe2liwKE-IIzBcOrQCA-VjYOaxMUmzlOl4HWiRycQI3xCMIsyqUeAM/s1600/Select_Game_Mode_20250207_080805_0006.webp') 50% 50% no-repeat blueviolet; background-size: contain; width: 80%; height: 5vw; color: red; font-size: 5vw;">Almacenamiento</div><br/>
+              Activar version Beta: <button id="onBetabtnConf" onclick="properties.soundClick.play(); properties.soundWarning.play(); (async function(){ if(properties.BetaEnable == 'true' && await customConfirm('Almacenamiento', 'SEGURO QUE QUIERES VOLVER AL MODO NORMAL? Puede que pierdas algunos datos!')){ swal('Almacenamiento', 'Actualizando...'); $('#Loader').fadeIn(); localStorage.setItem('BetaOn', 'false'); swal('Almacenamiento', 'Reiniciando...'); window.onbeforeunload = null; location.reload(); }else if(await customConfirm('Almacenamiento', 'SEGURO QUE QUIERES ACTIVAR EL MODO BETA? Se pueden perder datos, tener crasheos y puede que no funcione correctamente el Juego!')){ swal('Almacenamiento', 'Actualizando...'); $('#Loader').fadeIn(); localStorage.setItem('BetaOn', 'true'); swal('Almacenamiento', 'Reiniciando...'); window.onbeforeunload = null; location.reload(); } })();"></button><br/>
+              Almacenamiento Usado: <div id="storagUsedConf"></div><br/>
+              <button style="color: red;" onclick="properties.soundClick.play(); properties.soundWarning.play(); (async function(){ if(await customConfirm('Almacenamiento', 'SEGURO QUE QUIERES ELIMINAR TODO? (NO SE PUEDE RECUPERAR)')){ properties.soundWarning.play(); if(await customConfirm('Almacenamiento', 'SEGURO QUE QUIERES ELIMINAR TODO? POR SEGUNDA VEZ (NO SE PUEDE RECUPERAR)')){ properties.soundClickStart.play(); swal('Almacenamiento', 'ELIMINANDO TODO...'); localStorage.clear(); await localStorageCC.clear(); window.location.reload(); } } })();">ELIMINAR DATOS</button>
+            </center>
+          </div>
+          <div id="configInfoInterface" class="configInterface HiddenDef">
+            <center>
+              <div style="background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi64YW7YgLMSxUIKmZtKBapU6Lp1ZxUwjQ9wmNgkgx8lmE2_Op4qi6XM1iI0X81rGmMt3rNw2LNcxuOxCBGIEm9Jj3w2Nd3p7rEx1mfVe_zRYwWSXxRNqtvXVFIRcR1i-c-ZqNG8qcwnwH523hgFBJO0sWxdm08mMs7S-cHj1rl5yiH9d3cp0j5kcURhFmq/s1600/Select_Game_Mode_20250207_080806_0007.png') 50% 50% no-repeat lightskyblue; background-size: contain; width: 80%; height: 5vw; color: white; font-size: 5vw;">Info E Idioma</div><br/>
+              <div id="google_translate_element">Idioma</div><br/>
+              <a href="https://github.com/Creadores-Program/CreadorCraft-Arcade" target="_blank" rel="noopener noreferrer"><button><svg xmlns="http://www.w3.org/2000/svg" height="2vw" width="2vw" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>Repo de Github</button></a><br/>
+              <button onclick="properties.soundClick.play(); $('#configInfoInterface').hide(); $('#creditsInterface').fadeIn(); timeCCredit = setInterval('CreditsScroll()', 100);">Créditos</button><br/>
+              <div id="infoConfigDv"></div>
+            </center>
+          </div>
+        </div>
+        <div id="globalChatInterface" class="InterfazCC HiddenDef" style="background-color: gray;">
+          <widgetbot server="1105653858455269526" channel="1105653859126362184" class="InterfazCC" style="height: 90%;"></widgetbot>
+        </div>
+        <div id="creditsInterface" class="InterfazCC HiddenDef" style="background-color: #56A5EC; overflow-y: scroll; scroll-behavior: initial;">
+          <center>
+            <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_PrqUmBnWSYbseNmygnkXRlkxLV7T3YD7Ib74EpB8-k1VBG-DFFRY1IhfO1b6KrXQgHzlooTS7bXg2hkj4O-KCH6ZPE7gxltDLe2dEYLELn6xFNy-ppU02J6MaqNR8vgZX1Q5lHpm-YzmW-kGZUZYN9fLZZW9H_LETGiMbwOXOF-kdDEk5LFrx282Pg/s1400/20230207_215109.jpg' width='500' height='300'/>
+            <p style="font-size: 9vw;">Creditos:</p>
+            <p>Diseñadores Graficos: Samurai97, ManuelmcYOUTUBE y zNOoBy_
+              <br/>
+              Programador y Dueño: Trollhunters501
+              <br/>
+              Ayudaron al Codigo: Daxolomeo, RextDev, Devcheck, Microsoft Copilot IA, Gemini de Google, Github Copilot y Aldo_Rodrigo349
+              <br/>
+              Scripts Usados en el Juego:
+              <br/>
+              Google API's de Google
+              <br/>
+              Google Fonts de Google
+              <br/>
+              Clipboard.js de Zeno Rocha
+              <br/>
+              JQuery de The jQuery Foundation
+              <br/>
+              ImagesLoaded de David DeSandro
+              <br/>
+              Glide de Glide
+              <br/>
+              masory de David DeSandro
+              <br/>
+              Lodash de Lodash
+              <br/>
+              AMP JS de AMP Project
+              <br/>
+              TypeScript de Microsoft
+              <br/>
+              Material UI de Material UI
+              <br/>
+              Babel de Babel
+              <br/>
+              css-Polifill de philschatz
+              <br/>
+              Axios de Axios
+              <br/>
+              JSZip de Stuart Knightley
+              <br/>
+              CodeMirrior de Marijn Haverbeke
+              <br/>
+              PyScript de PyScript
+              <br/>
+              CoffeeScript de CoffeeScript
+              <br/>
+              SCSS de Sass
+              <br/>
+              EsJS de Enzonotario y Creadores Program
+              <br/>
+              CommonJS de Creadores Program & popeindustries
+              <br/>
+              Marked de Markedjs
+              <br/>
+              Three.js de Three.js
+              <br/>
+              PHP-Wasm de PHP-Wasm
+              <br/>
+              Ruby wasm-wasi de Ruby
+              <br/>
+              WebPerl de haukex
+              <br/>
+              Lua.vm de Lua.vm
+              <br/>
+              Bowser de lancedikson
+              <br/>
+              Ejs de Ejs
+              <br/>
+              Polyfill.io de Financial-Times
+              <br/>
+              DOM Purify de cure53
+              <br/>
+              Chat Global: WidgetBot y Discord
+              <br/>
+              Traductor: Google Translate
+              <br/>
+              Musica y Sonidos:
+              <br/>
+              Epic Boss Fight
+              <br/>
+              Don't Rush Inst.
+              <br/>
+              Rush 2
+              <br/>
+              Combat Zone
+              <br/>
+              Arcade Center
+              <br/>
+              Maybe Not.
+              <br/>
+              My Galaxy
+              <br/>
+              Comic Book
+              <br/>
+              Neon Cityscape
+              <br/>
+              Retro
+              <br/>
+              Uncoventioal Inst.
+              <br/>
+              Diseños Creados en:
+              <br/>
+              Canva
+              <br/>
+              8 Bit
+              <br/>
+              Efectos de sonido: Kinemaster
+              <br/>
+              Patrocinadores:
+              <br/>
+              EsJS
+              <br/>
+              Creadores Program ©2025
+              <br/><br/>
+              <img src="https://buttons.blogger.com/bloggerbutton2.gif" alt="Powered by Blogger"/>
+            </p>
+          </center>
+        </div>
+        <button id="backBtn" class="HiddenDef" style="z-index: 11; position: fixed; bottom: 2vw; left: 2vw; padding: 1vw 2vw; width: 8vw; height: 8vw; background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjR42JCp5tzKCECa6eMmRHuGli8QaucIFmeuKWUIE4Zej_h8oo7TFHJaz45sHgrYV_5xG8wUcRFbyaU2AxzCkTaxnX01ZI9tDVzP-Z1OO68aYUV_2jj9gR1Rriu5Q4Hi2XAhu3bxqDVWsmsWIoAgvT8Ti6hmNn0Yps3mMM8YG9JueVn_TEzUSu-jj8q8EMy/s1600/navigate_before_FILL1_wght500_GRAD0_opsz48.png') 50% 50% no-repeat lightblue; background-size: contain;" onclick="properties.soundClick.play();"></button>
+        <div class="cookie-banner HiddenDef" id="cookie-banner" style="position: fixed; bottom: 20px; left: 20px; right: 20px; background-color: #333; border: 1px solid #444; padding: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); align-items: center; justify-content: space-between; color: #f7f7f7; z-index: 13;">
+          <p>Usamos cookies de terceros para mejorar tu experiencia. <a href="https://creadorcraft.blogspot.com/p/cookies-de-terceros.html">Más información</a>.</p>
+          <button onclick="acceptCookies();">Aceptar</button>
+        </div>
+    </div>
+    <div id="notify-movil-horizontal" class="InterfazCC" style="background-color: #56A5EC;">
+        <a href="https://github.com/Creadores-Program/CreadorCraft-Arcade/wiki"><p align="right">[?] Ayuda</p></a>
+        <center>
+            <p>Por favor, coloca tu móvil en Horizontal!.</p>
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhURMn_NFfDMW-6_fm-FKVBQ0tCPenYCGWmxE2PJ2MGoPXef2IVP78L4zh6hB3Z8bhceOVnLqBUuvJdxK29EGQmvNOUp4R19jCA8eKJ0etOVP5qkBCh06PQyN0dPPkWvpXAWeqBDjK1KczeFyWePDr-eNC1cw3Bnw-PdutJnzMjSvL8U_L5OxB1rNwykrfx/s2592/png_20230217_225412_0000.png" width="300" height="600"/>
+        </center>
+    </div>
+    <script>
+      if(bowser.getParser(window.navigator.userAgent).satisfies({
+        chrome: "<55",
+        firefox: "<50",
+        opera: "<42",
+        safari: "<10",
+        "internet explorer": "<=11",
+        ie: "<=11",
+        edge: "<14",
+        "android browser": "<55",
+        "samsung_internet": "<6",
+        chromium: "<55"
+      })){
+        document.body.innerHTML = "<style>body{background-color:#add8e6;color:#333;text-align:center;padding:50px}h1{font-size:2.5em;color:#ff0000}p{font-size:1.2em}</style><h1>Navegador O Motor Web No Compatible</h1><p>Lo sentimos, pero tu navegador no es compatible con este juego. Por favor, actualiza tu navegador o usa <span style='color:green;'>Chrome</span>, Safari, <span style='color:red;'>Opera</span>, <span style='color:blue;'>Edge</span> o <span style='color:orange;'>Firefox</span>.</p>";
+      }
+    </script>
+    <script>
+      // Error Detection (Local only)
+      window.addEventListener("error", async function(event){
+        let error = event.error;
+        if(!error || error.message == "can't find <link rel=\"manifest\" href=\"..\" />'" || error.message == "stopGameDocument"){
+          return;
+        }
+        let err = error.stack || error;
+        console.error("Game Error:", err);
+        if(properties != null){
+          properties.soundWarning.play();
+          await swal("Error en el Juego", properties.errorGameMessage, "error");
+        }else{
+          await swal("Error", "Se ha producido un error crítico en el juego ☠️", "error");
+        }
+      });
+    </script>
+    <script>
+      //Codigo de Ejecucion
+      document.oncontextmenu = function(){return false;};
+      var properties = {
+        soundMenu: new Audio("https://cdn.jsdelivr.net/gh/Creadores-Program/CreadorCraft-Arcade/music/menu-arcade.ogg"),
+        soundClick: new AudioGame('https://cdn.jsdelivr.net/gh/Creadores-Program/CreadorCraft-Arcade/music/click.ogg'),
+        soundWarning: new AudioGame('https://cdn.jsdelivr.net/gh/Creadores-Program/CreadorCraft-Arcade/music/Warning.ogg'),
+        soundClickStart: new AudioGame("https://cdn.jsdelivr.net/gh/Creadores-Program/CreadorCraft-Arcade/music/ClickStartWorld.ogg"),
+        soundMusicGame: new Audio ("https://cdn.jsdelivr.net/gh/Creadores-Program/CreadorCraft-Arcade/music/SoundGameMusic.ogg"),
+        soundWin: new AudioGame("https://cdn.jsdelivr.net/gh/Creadores-Program/CreadorCraft-Arcade/music/win.ogg"),
+        TimeoutGame: new AudioGame("https://cdn.jsdelivr.net/gh/Creadores-Program/CreadorCraft-Arcade/music/TimeoutGame.ogg"),
+        errorGameMessage: 'Hubo un error o bug en el Juego!',
+        getGame: {
+          getVersion: "1.1.2 ESTABLE",
+          getBetaVersion: "0"
+        }
+      };
+      var timeCCredit;
+      let GamesList;
+      let GamesInfo;
+      let storageDB;
+      class StorageCC{
+        constructor(){
+          if(!window.indexedDB){
+            return;
+          }
+          this.dbName = "CreadorCraftSuperDB";
+          this.db = null;
+          this.isReady = false;
+          this.readyPromise = this.initDB();
+        }
+        async initDB(){
+          return new Promise(function(resolve, reject){
+            let request = indexedDB.open(this.dbName, 1);
+            request.onerror = function(event){
+              reject(event.target.error);
+            };
+            request.onupgradeneeded = function(event){
+              let db = event.target.result;
+              db.createObjectStore("gameData", { keyPath: "key" });
+            };
+            request.onsuccess = function(event){
+              this.db = event.target.result;
+              this.isReady = true;
+              resolve();
+            }.bind(this);
+          }.bind(this));
+        }
+        async setItem(key, value){
+          if(!window.indexedDB){
+            localStorage.setItem(key, value);
+            return;
+          }
+          await this.readyPromise;
+          let transaction = this.db.transaction(["gameData"], "readwrite");
+          let store = transaction.objectStore("gameData");
+          return new Promise(function(resolve, reject){
+            let request = store.put({ key: key, value: value });
+            request.onsuccess = function(){
+              resolve();
+            };
+            request.onerror = function(event){
+              reject(event.target.error);
+            };
+          });
+        }
+        async getItem(key){
+          if(!window.indexedDB){
+            return localStorage.getItem(key);
+          }
+          if(localStorage.getItem(key)){
+            let val = localStorage.getItem(key);
+            this.setItem(key, val);
+            localStorage.removeItem(key);
+            return val;
+          }
+          await this.readyPromise;
+          let transaction = this.db.transaction(["gameData"], "readonly");
+          let store = transaction.objectStore("gameData");
+          return new Promise(function(resolve, reject){
+            let request = store.get(key);
+            request.onsuccess = function(event){
+              if(event.target.result){
+                resolve(event.target.result.value);
+              }else{
+                resolve(null);
+              }
+            };
+            request.onerror = function(event){
+              reject(event.target.error);
+            };
+          });
+        }
+        async removeItem(key){
+          if(localStorage.getItem(key)){
+            localStorage.removeItem(key);
+          }
+          if(!window.indexedDB){
+            return;
+          }
+          await this.readyPromise;
+          let transaction = this.db.transaction(["gameData"], "readwrite");
+          let store = transaction.objectStore("gameData");
+          return new Promise(function(resolve, reject){
+            let request = store.delete(key);
+            request.onsuccess = function(){
+              resolve();
+            };
+            request.onerror = function(event){
+              reject(event.target.error);
+            };
+          });
+        }
+        async clear(){
+          if(!window.indexedDB){
+            return;
+          }
+          await this.readyPromise;
+          let transaction = this.db.transaction(["gameData"], "readwrite");
+          let store = transaction.objectStore("gameData");
+          return new Promise(function(resolve, reject){
+            let request = store.clear();
+            request.onsuccess = function(){
+              resolve();
+            };
+            request.onerror = function(event){
+              reject(event.target.error);
+            };
+          });
+        }
+        async size(units){
+          if(!window.indexedDB){
+            return localStorage.size(units);
+          }
+          await this.readyPromise;
+          units = units ? units.toUpperCase() : 'MB';
+          let transaction = this.db.transaction(["gameData"], "readonly");
+          let store = transaction.objectStore("gameData");
+          return new Promise(function(resolve, reject){
+            let size = 0;
+            let cursorRequest = store.openCursor();
+            cursorRequest.onsuccess = function(event){
+              let cursor = event.target.result;
+              if(cursor){
+                size += unescape(encodeURIComponent(JSON.stringify(cursor.value))).length;
+                cursor.continue();
+              }else{
+                switch (units){
+                  case 'B': resolve([size,'B'].join('')); break;
+                  case 'KB': resolve([+(size / 1024).toFixed(3),'KB'].join('')); break;
+                  case 'MB': resolve([+(size / 1024 / 1024).toFixed(3),'MB'].join('')); break;
+                  case 'GB': resolve([+(size / 1024 / 1024 / 1024).toFixed(3),'GB'].join('')); break;
+                  default: resolve([+(size / 1024 / 1024).toFixed(3),'MB'].join('')); break;
+                }
+              }
+            };
+            cursorRequest.onerror = function(event){
+              reject(event.target.error);
+            };
+          });
+        }
+      }
+      var localStorageCC = new StorageCC();
+      Object.defineProperty(navigator, "getPWA", { get: function(){ return properties; } });
+      console.info("%cCargando...", "background-color: black; color: white;");
+      console.info("%cCon el Poder de %cCreadores Program %c©2025", "background-color: black; color: white;", "background-color: black; color: #0000FF;", "background-color: black; color: white;");
+
+      //Polyfills y mas...
+      function getUUID(){
+		  if (window.crypto && typeof window.crypto.randomUUID === "function"){
+			  return window.crypto.randomUUID();
+		  }
+		  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+              const r = Math.random() * 16 | 0;
+              const v = c === 'x' ? r : (r & 0x3 | 0x8);
+              return v.toString(16);
+          });
+	  }
+      if(localStorage == null){
+        Object.defineProperty(window, "localStorage", { get: function(){ return sessionStorage; } });
+      }
+      if(window.self !== window.top && (window.location.pathname != "/b/blog-preview" || window.location.href.indexOf("token") < 1)){
+        $("body").html("<h1>Error Ventana Invalida:<br/>No está permitido el Iframe en este Juego!</h1>");
+        window.close();
+        stopGame();
+      }else if(window.location.host != "creadorcraftcp.blogspot.com"){
+        swal("CreadorCraft Arcade", "No se puede cargar el Juego en este Dominio!", "error");
+        $("body").html("<h1>Error Dominio Invalido:<br/>No está permitido el Juego en este Dominio!</h1>");
+        window.close();
+        stopGame();
+      }else if(window.location.pathname == "/b/blog-preview" && window.location.href.indexOf("token") > 0){
+        properties.DebugEnable = true;
+      }
+      async function customConfirm(title, text){
+        return await swal({title: title, text: text, icon: "info", buttons: ["cancelar", "aceptar"]});
+      }
+      async function customPrompt(title, text, prefix) {
+        prefix = prefix || '';
+        let val = await swal({
+          title: title,
+          text: text,
+          icon: "info",
+          content: {
+            element: "input",
+            attributes: {
+              type: 'text',
+              placeholder: prefix
+            }
+          },
+          buttons: ["cancelar", "aceptar"]
+        });
+        if(val){
+          return val;
+        }
+        return null;
+      }
+      properties.soundMenu.loop = true;
+      properties.soundMusicGame.loop = true;
+      properties.soundMenu.autoplay = true;
+      Storage.prototype.size = function(units) {
+          'use strict';
+          units = units ? units.toUpperCase() : 'MB';
+          let size = unescape(encodeURIComponent(JSON.stringify(this))).length;
+          switch (units){
+              case 'B': return [size,'B'].join('');
+              case 'KB': return [+(size / 1024).toFixed(3),'KB'].join('');
+              case 'MB': return [+(size / 1024 / 1024).toFixed(3),'MB'].join('');
+              case 'GB': return [+(size / 1024 / 1024 / 1024).toFixed(3),'GB'].join('');
+              default: return [+(size / 1024 / 1024).toFixed(3),'MB'].join('');
+          }
+      };
+      window.isFullScreen = function() {
+        return document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
+      };
+      function exitFullScreen() {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.mozCancelFullScreen) { // Firefox
+          document.mozCancelFullScreen();
+        } else if (document.webkitExitFullscreen) { // Chrome, Safari and Opera
+          document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) { // IE/Edge
+          document.msExitFullscreen();
+        }
+      }
+      function enterFullScreen() {
+        const docElm = document.documentElement;
+        if (docElm.requestFullscreen) {
+          docElm.requestFullscreen();
+        } else if (docElm.mozRequestFullScreen) { // Firefox
+          docElm.mozRequestFullScreen();
+        } else if (docElm.webkitRequestFullScreen) { // Chrome, Safari and Opera
+          docElm.webkitRequestFullScreen();
+        } else if (docElm.msRequestFullscreen) { // IE/Edge
+          docElm.msRequestFullscreen();
+        }
+      }
+      if(!localStorage.getItem("BetaOn")){
+        localStorage.setItem("BetaOn", "false");
+        properties.BetaEnable = localStorage.getItem("BetaOn");
+      }else{
+        properties.BetaEnable = localStorage.getItem("BetaOn");
+      }
+      if(properties.BetaEnable != "true"){
+        if(properties.DebugEnable){
+          version.innerHTML = properties.getGame.getVersion + " Modo Depuracion";
+        }else{
+          version.innerHTML = properties.getGame.getVersion;
+        }
+      }else{
+        if(properties.DebugEnable){
+          version.innerHTML = properties.getGame.getVersion + " Beta " + properties.getGame.getBetaVersion + " Modo Depuracion";
+        }else{
+          version.innerHTML = properties.getGame.getVersion + " Beta " + properties.getGame.getBetaVersion;
+        }
+      }
+      if ('wakeLock' in navigator){
+        navigator.wakeLock.request('screen');
+      }
+      if('serviceWorker' in navigator){
+        navigator.serviceWorker.register("https://cdn.jsdelivr.net/gh/Creadores-Program/CreadorCraft-Arcade/sw.js").then(
+            (registration) => {
+              console.info("SW.js loaded!: ", registration);
+            },
+            (error) => {
+              let err = error.stack || error;
+              console.error("Error SW.js not loaded! error: " + err);
+            });
+      }else{
+        console.warn("Service Worker no Soportado!");
+      }
+      function stopGame(){
+        throw new Error("stopGameDocument");
+      }
+      function acceptCookies(){
+        localStorage.setItem('cookiesAccepted', 'true');
+        $("#cookie-banner").fadeOut();
+      }
+
+      let url = window.location.protocol + "//" + window.location.host + window.location.pathname;
+      window.history.replaceState({ path: url }, '', url);
+      function CreditsScroll() {
+        creditsInterface.scrollBy(0, 1);
+        if ((creditsInterface.scrollTop + creditsInterface.clientHeight) >= creditsInterface.scrollHeight) {
+          creditsInterface.scrollTo(0, 0);
+          backBtn.click();
+          clearInterval(timeCCredit);
+        }
+      }
+      setTimeout("$('#present').fadeOut();", 3000);
+      let noloadG = setTimeout("$('#loadernotloadbtncon').show();", 120000);
+
+      //events
+      window.addEventListener('beforeunload', function (event) {
+          event.preventDefault();
+          event.returnValue = 'Seguro que quieres Salir?';
+      });
+      UpCustGame.addEventListener('change', async function(){
+        $('#Loader').fadeIn();
+        let FilesG = $("#UpCustGame").prop("files");
+        if(FilesG.length > 1){
+          await swal("CreadorCraft", "Porfavor solo sube un Juego!", "error");
+          $("#Loader").fadeOut();
+          UpCustGame.value = '';
+          return;
+        }
+        FilesG = FilesG[0];
+        if(FilesG.name.split('.').pop().toLowerCase() != "zip"){
+          await swal("CreadorCraft", "Parece que esto no es un juego!", "error");
+          $("#Loader").fadeOut();
+          UpCustGame.value = '';
+          return;
+        }
+        let zipFile;
+        try{
+          zipFile = await JSZip.loadAsync(FilesG);
+        }catch(error){
+          await swal("CreadorCraft", "Error Juego dañado!", "error");
+          UpCustGame.value = '';
+          $("#Loader").fadeOut();
+          return;
+        }
+        await saveCreadorCraftGame(zipFile);
+        try{
+          await LoadBasicGameProps(zipFile);
+        }catch(error){
+          await swal("CreadorCraft", "Error: "+error, "error");
+          UpCustGame.value = '';
+          $("#loaderBar").prop("value", null);
+          $("#loaderBar").html("");
+        }
+        $("#Loader").fadeOut();
+      });
+      backBtn.addEventListener("click", function(){
+        $("#backBtn").hide();
+        $("#creditsInterface").hide();
+        $("#globalChatInterface").hide();
+        $("#configInterface").hide();
+        $("#customGameInterface").hide();
+        $("#selectionInterface").hide();
+        $("#listGames").hide();
+        $("#startInterface").show();
+        UpCustGame.value = '';
+        customGamePlay.onclick = null;
+        clearInterval(timeCCredit);
+        $("#loaderBar").prop("value", null);
+        $("#loaderBar").html("");
+      });
+      loadernotloadbtncon.addEventListener("click", function(){
+        properties.soundClick.play();
+        window.stop();
+        $("#loadernotloadbtncon").hide();
+      });
+      window.addEventListener("offline", async function(){
+        properties.soundWarning.play();
+        await swal("CreadorCraft", "Advertencia! Puede que no funcione correctamente el juego sin Internet!", "warning");
+      });
+
+      // Initialize default user
+      if(!localStorage.getItem("playerName")){
+        localStorage.setItem("playerName", "Jugador"+Math.floor(Math.random() * 1000000));
+        localStorage.setItem("playerID", ~~(Math.random() * (99999 - 1) + 1));
+        localStorage.setItem("PlayerAvatar", "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJXndy1em5_q1Vmhwq0I-bpoMyX0GdM5nHhfjFuiR8yttieNwQI3sryif5eybmYjIjJN4jzenGW794DvK3tWvesTu3780EsegM1Cm5Z_fClpW2bp4Fn97sVPSN9UFcna6f96eICiowLLi6gNq4wEhsA9wZYtdqJ0KfRuGurttRocHI4jY/s1600/2023-02-23_22.01.27.png");
+        localStorage.setItem("PlayerProfileBackgroundColor", "lightblue");
+      }
+      properties.playerName = localStorage.getItem("playerName");
+      properties.playerID = localStorage.getItem("playerID");
+      properties.playerAvatar = localStorage.getItem("PlayerAvatar");
+
+      //load Code
+      window.addEventListener("load", async function(){
+        clearTimeout(noloadG);
+        $("#loadernotloadbtncon").hide();
+        if(!localStorage.getItem("AcceptTermsAndConditions")){
+          if(await customConfirm("CreadorCraft", "Aceptas la Política de Privacidad https://creadorcraft.blogspot.com/p/politica-de-privacidad.html y Los Términos y Condiciones de Usó https://creadorcraft.blogspot.com/p/terminos-y-condiciones-de-uso.html del Juego?")){
+            localStorage.setItem("AcceptTermsAndConditions", true);
+          }else{
+            window.close();
+            document.body.innerHTML = "<h1>Debes Aceptar los Términos y Condiciones para Jugar!</h1>";
+            stopGame();
+          }
+        }
+        if(properties.BetaEnable == 'true'){
+          if(!localStorage.getItem("updateAdBeta") || localStorage.getItem("updateAdBeta") != properties.getGame.getBetaVersion){
+              localStorage.setItem("updateAdBeta", properties.getGame.getBetaVersion);
+              await swal({ title: "Actualización CreadorCraft", text: "Novedades de CreadorCraft V." + properties.getGame.getVersion + " Beta " + properties.getGame.getBetaVersion + "\n•Actualmente no hay novedades en Beta", icon: "info"});
+          }
+        }
+        if(!localStorage.getItem("updateAd") || localStorage.getItem("updateAd") != properties.getGame.getVersion){  
+          localStorage.setItem("updateAd", properties.getGame.getVersion);
+          await swal({ title: "Actualización CreadorCraft", text: "Novedades de CreadorCraft V." + properties.getGame.getVersion + "\n•Se añadio La API AudioGame de CreadoresProgram!(ver mas en github de AudioGame)\n•Se Cambio La API en algunos sonidos por defecto a AudioGame\n•Ahora se guardan automaticamente los juegos antiguos sin uuid asignandole una\n•Se arreglaron errores!\nDisfruta la Actualización!", icon: "info" });
+        }
+        if (!localStorage.getItem('cookiesAccepted')) {
+          $("#cookie-banner").fadeIn();
+        }
+
+        if(document.getElementById("PerfilNameConf")){
+          document.getElementById("PerfilNameConf").innerText = properties.playerName;
+        }
+        if(document.getElementById("fotoPerfilConf")){
+          document.getElementById("fotoPerfilConf").src = properties.playerAvatar;
+        }
+        if(document.getElementById("profileConfId")){
+          document.getElementById("profileConfId").innerText = "ID: " + properties.playerID;
+        }
+
+        if(!(await localStorageCC.getItem("GamesList"))){
+          await localStorageCC.setItem("GamesList", "[]");
+        }
+        if(!(await localStorageCC.getItem("GamesInfo"))){
+          await localStorageCC.setItem("GamesInfo", "{}");
+        }
+
+        $("#startInterface").show();
+        $("#Loader").fadeOut();
+      });
+    </script>
+  </body>
+</html>
